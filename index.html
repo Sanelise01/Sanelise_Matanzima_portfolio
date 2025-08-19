@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sanelise Matanzima — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+    <style>
+        /* Reset and font */
+        body, html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(44, 62, 80, 0.95);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 50px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover { text-decoration: underline; }
+
+        /* Cover */
+        .cover {
+            width: 100%;
+            height: 350px;
+            background: url('images/cover.jpg.png') center/cover no-repeat;
+            margin-top: 60px; /* offset for fixed navbar */
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 10%;
+        }
+
+        .about, .skills, .contact { background: #f4f4f4; }
+        .projects { background: #fff; }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .about-text { flex: 1; min-width: 250px; margin-right: 20px; }
+        .about img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Project Cards */
+        .project {
+            margin-bottom: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .project img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+        }
+
+        .project-details {
+            padding: 15px;
+        }
+
+        h2, h3 { color: #2c3e50; }
+        .skills span {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 12px;
+            margin: 5px 5px 0 0;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a { color: white; margin: 0 10px; font-size: 18px; }
+
+        /* Responsive */
+        @media(max-width:768px){
+            .about-content { flex-direction: column; }
+            .about-text { margin-right: 0; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo"><strong>Sanelise Matanzima</strong></div>
+    <div class="menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Cover -->
+<div class="cover"></div>
+
+<!-- About Me Section -->
+<section id="about" class="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>I am <strong>Sanelise Matanzima</strong>, a Psychology graduate and emerging AI innovator dedicated to creating human-centered solutions that combine psychology insights with AI technologies.</p>
+            <p>Passionate about interdisciplinary problem-solving, I focus on inclusive, ethical, and impactful applications in education, career development, and technology-driven initiatives.</p>
+        </div>
+        <img src="images/profile.jpg.png" alt="Sanelise Profile">
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <img src="images/it-master-chatbot.png" alt="IT Master Chatbot">
+        <div class="project-details">
+            <h3>IT Master Chatbot</h3>
+            <p>Conversational AI learning companion for beginners, simplifying AI concepts with custom learning paths.</p>
+            <p><strong>Tech Stack:</strong> Botpress, NLP, Conversation Design</p>
+            <p><a href="#">Project Page</a> | <a href="#">Live Demo</a></p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="images/career-canvas.png" alt="Career Canvas Smart Build">
+        <div class="project-details">
+            <h3>Career Canvas Smart Build</h3>
+            <p>Professional document platform with modular templates and responsive design for cross-device use.</p>
+            <p><strong>Tech Stack:</strong> React, TypeScript, Tailwind CSS</p>
+            <p><a href="https://github.com/Sanelise01/career-canvas-smart-build">Project Page</a> | <a href="https://career-canvas-smart-build.vercel.app">Live Demo</a></p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="images/creativerseai.png.png" alt="CreatiVerseAI">
+        <div class="project-details">
+            <h3>CreatiVerseAI</h3>
+            <p>AI-powered creative writing tool generating poems, stories, and literary prompts using LLaMA 3.3 and Groq API.</p>
+            <p><strong>Tech Stack:</strong> Groq API, LLaMA 3.3, Python, Streamlit</p>
+            <p><a href="#">Project Page</a> | <a href="#">Live Demo</a></p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="images/fairness-audit.png.png" alt="Fairness Audit Wizard">
+        <div class="project-details">
+            <h3>Fairness Audit Wizard</h3>
+            <p>Analytical tool for bias detection in ML models, with dashboards and mitigation insights.</p>
+            <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Plotly</p>
+            <p><a href="https://github.com/Sanelise01/fairness-unveiled-insights">Project Page</a> | <a href="#">Live Demo</a></p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="images/machine-daily-check.png.png" alt="Machine Daily Check Prototype">
+        <div class="project-details">
+            <h3>Machine Daily Check Prototype</h3>
+            <p>Tablet-friendly UX/UI prototype streamlining industrial machine maintenance checks.</p>
+            <p><strong>Tech Stack:</strong> Figma, UX Design, Prototyping</p>
+            <p><a href="https://www.figma.com/design/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype">Project Page</a> | <a href="#">Live Demo</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <span>Python</span>
+    <span>OpenAI API</span>
+    <span>Supabase</span>
+    <span>Botpress</span>
+    <span>Flowise AI</span>
+    <span>Figma</span>
+    <span>SQL</span>
+    <span>Git</span>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>📧 <a href="mailto:sanelisematanzima@gmail.com">sanelisematanzima@gmail.com</a> | 🐙 <a href="https://github.com/Sanelise01">GitHub</a> | 💼 <a href="https://l
