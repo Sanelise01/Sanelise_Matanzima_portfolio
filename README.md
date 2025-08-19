@@ -10,7 +10,7 @@
 <div style="text-align:center; margin-bottom:40px; font-size:18px; font-weight:bold; color:#2c3e50;">
 IT Support Associate | Psychology Graduate | Emerging AI Innovator
 </div>
----
+
 A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. Dedicated to building ethical, human-centered solutions through intelligent design.
 
 ---
@@ -27,10 +27,21 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 <img src="images/profile.jpg.png.jpeg" alt="Profile Photo" style="width:200px; height:200px; object-fit:cover; border-radius:12px; border:3px solid #3498db;"/>
 </div>
 </div>
----
+
 ## Career Objective
 
 Seeking opportunities in AI, data analytics, or intelligent system development, particularly in career development, education, or health tech.
+## My Approach
+
+**Human-Centered Design**  
+Using psychology principles to create intuitive and accessible solutions.
+
+**Technical Excellence**  
+Building robust applications with modern tools and best practices.
+
+**Ethical AI**  
+Committed to developing fair, transparent, and beneficial AI systems.
+
 ---
 
 ## Projects
@@ -117,7 +128,11 @@ Seeking opportunities in AI, data analytics, or intelligent system development, 
 Python, OpenAI API, Supabase, Botpress, Flowise AI, React, TypeScript, Tailwind CSS, SQL, Git  
 
 **Core Competencies:**  
-Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, Adaptability  
+Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, Adaptability
+
+## Psychology Foundation
+
+My psychology background provides unique insights into human behavior, cognitive processes, and ethical considerations in AI development. This interdisciplinary approach enables me to build more inclusive and human-centered AI solutions
 
 ---
 
@@ -168,9 +183,26 @@ Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, 
 
 ---
 
-## ## Contact Me
+## Get In Touch
+
+Let's connect and explore opportunities to collaborate on meaningful projects.
+
+**Location:** Currently based in South Africa  
+_Open to remote opportunities_  
+
+### Contact Me
 
 - **Email:** [sanelisematanzima@gmail.com](mailto:sanelisematanzima@gmail.com)  
 - **GitHub:** [Sanelise01](https://github.com/Sanelise01)  
 - **LinkedIn:** [Sanelise Matanzima](https://www.linkedin.com/in/sanelise-matanzima)  
-- **Download CV:** [SmartResume.pdf](SmartResume.pdf)
+- **Download CV:** [SmartResume.pdf](SmartResume.pdf)  
+
+### Let's Build Something Amazing
+I'm passionate about creating ethical AI solutions that make a real difference. Whether you have a project in mind or want to explore collaboration opportunities, I'd love to hear from you.
+
+**Start a Conversation**  
+Sanelise Matanzima  
+Psychology Graduate & Emerging AI Innovator  
+
+_Building ethical, human-centered AI solutions • © 2025_
+
