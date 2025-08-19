@@ -1,151 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanelise Matanzima Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanelise Matanzima — Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    /* General Body */
+    body { font-family: 'Arial', sans-serif; margin:0; padding:0; line-height:1.6; color:#2c3e50; background:#f4f4f9; scroll-behavior: smooth; }
+    h2 { text-align:center; margin:50px 0 30px; color:#34495e; }
+    h3 { margin:10px 0; }
+    a { text-decoration:none; }
+
+    /* Sticky Navbar */
+    nav { position: sticky; top:0; background:#fff; box-shadow:0 4px 8px rgba(0,0,0,0.1); z-index:1000; }
+    nav ul { display:flex; justify-content:center; margin:0; padding:10px 0; list-style:none; flex-wrap:wrap; }
+    nav ul li { margin:0 15px; }
+    nav ul li a { color:#3498db; font-weight:bold; font-size:16px; transition: color 0.3s; }
+    nav ul li a:hover { color:#e67e22; }
+
+    /* Sections */
+    .section { width:90%; max-width:1200px; margin:0 auto; padding-bottom:50px; scroll-margin-top:70px; }
+
+    /* Interactive Cards */
+    .projects, .certificates { display:flex; flex-wrap:wrap; gap:25px; justify-content:center; }
+    .card, .cert-card { position: relative; overflow: hidden; border-radius:15px; box-shadow:0 6px 15px rgba(0,0,0,0.25); transition: transform 0.4s ease, box-shadow 0.4s ease; flex:1 1 320px; max-width:350px; }
+    .card:hover, .cert-card:hover { transform: scale(1.05); box-shadow:0 12px 30px rgba(0,0,0,0.4); }
+    .card-inner { position: relative; }
+    .card img, .cert-card img { width: 100%; height:180px; object-fit: cover; transition: transform 0.4s ease; }
+    .card:hover img, .cert-card:hover img { transform: scale(1.1); }
+    .card-overlay { position:absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.75); color:white; opacity:0; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; transition:opacity 0.4s ease; }
+    .card:hover .card-overlay, .cert-card:hover .card-overlay { opacity:1; }
+    .card-overlay p { margin:10px 0; }
+    .btn { padding:6px 12px; border-radius:5px; font-weight:bold; margin:5px; }
+    .btn-demo { background:#FFD700; color:black; }
+    .btn-github { background:#2c3e50; color:white; }
+
+    /* Cover Banner */
+    .cover img { width:100%; max-height:300px; object-fit:cover; border-radius:15px; }
+    .tagline { text-align:center; margin-bottom:40px; font-size:18px; font-weight:bold; color:#2c3e50; }
+
+    /* About Me */
+    .about { display:flex; flex-wrap:wrap; align-items:flex-start; gap:20px; margin-bottom:50px; }
+    .about-text { flex:1; min-width:250px; font-size:16px; line-height:1.6; }
+    .about-img { flex:0 0 200px; }
+    .about-img img { width:200px; height:200px; object-fit:cover; border-radius:12px; border:3px solid #3498db; }
+
+    /* Lists */
+    ul { list-style-type: disc; padding-left:20px; }
+
+    /* Contact */
+    .contact { text-align:center; }
+    .contact ul { list-style:none; padding:0; }
+    .contact li { margin:10px 0; }
+    .contact a { color:#3498db; font-weight:bold; }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      nav ul { flex-direction:column; gap:10px; }
+      .about { flex-direction:column; align-items:center; }
+      .about-img { flex:0 0 auto; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- Cover Banner -->
-<div class="cover-banner">
-    <img src="images/cover.jpg.png.png" alt="Cover Banner">
-</div>
-<h2 class="tagline">IT Support Associate | Psychology Graduate | Emerging AI Innovator</h2>
-
-<!-- About Me -->
-<div class="about-me">
-    <div class="about-me-text">
-        <p>
-            I am a <strong>versatile problem-solver</strong> with a foundation in psychology and hands-on experience in AI/ML development. My passion lies in combining <strong>behavioral insight with cutting-edge technology</strong> to design practical, ethical, and human-centered solutions.
-        </p>
-        <p>
-            With <strong>resilience and adaptability</strong>, I tackle complex challenges and deliver value-driven outcomes in education, employment, and technology. My goal is to apply <strong>interdisciplinary thinking</strong> to build inclusive, ethical, and impactful AI solutions.
-        </p>
-    </div>
-    <img src="images/profile.jpg.png.jpeg" alt="Profile Photo">
-</div>
-
-<!-- Projects -->
-<div class="projects">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>IT Master Chatbot</h3>
-        <img src="images/it-master-chatbot.png.png" alt="IT Master Chatbot">
-        <p>Conversational AI learning companion for beginners.</p>
-        <p><strong>Tech:</strong> Botpress, NLP, Conversation Design</p>
-        <div class="project-buttons">
-            <a href="https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json" target="_blank">Live Demo</a>
-            <a href="https://github.com/Sanelise01/it-master-chatbot" target="_blank">GitHub</a>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <h3>Career Canvas Smart Build</h3>
-        <img src="images/career-canvas.png.png" alt="Career Canvas Smart Build">
-        <p>Professional document platform with responsive design.</p>
-        <p><strong>Tech:</strong> React, TypeScript, Tailwind CSS</p>
-        <div class="project-buttons">
-            <a href="https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8" target="_blank">Live Demo</a>
-            <a href="https://github.com/Sanelise01/career-canvas-smart-build" target="_blank">GitHub</a>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <h3>CreatiVerseAI</h3>
-        <img src="images/creativerseai.png.png.png" alt="CreatiVerseAI">
-        <p>AI-powered creative writing tool generating poems, stories, and prompts.</p>
-        <p><strong>Tech:</strong> Groq API, LLaMA 3.3, Python, Streamlit</p>
-        <div class="project-buttons">
-            <a href="https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299" target="_blank">Live Demo</a>
-            <a href="https://github.com/Sanelise01/creativerseai" target="_blank">GitHub</a>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <h3>Fairness Audit Wizard</h3>
-        <img src="images/fairness-audit.png.png.png" alt="Fairness Audit Wizard">
-        <p>Analytical tool for bias detection in ML models.</p>
-        <p><strong>Tech:</strong> Python, Pandas, Scikit-learn, Plotly</p>
-        <div class="project-buttons">
-            <a href="https://lovable.dev/projects/58f62fa0-cadc-42b7-9d05-3732e176e4ab" target="_blank">Live Demo</a>
-            <a href="https://github.com/Sanelise01/fairness-audit-wizard" target="_blank">GitHub</a>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <h3>Machine Daily Check Prototype</h3>
-        <img src="images/machine-daily-check.png.png.png" alt="Machine Daily Check Prototype">
-        <p>Tablet-friendly UX/UI prototype streamlining industrial machine maintenance checks.</p>
-        <p><strong>Tech:</strong> Figma, UX Design, Prototyping</p>
-        <div class="project-buttons">
-            <a href="https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3" target="_blank">Live Demo</a>
-            <a href="https://github.com/Sanelise01/machine-daily-check-prototype" target="_blank">GitHub</a>
-        </div>
-    </div>
-</div>
-
-<!-- Skills -->
-<div class="skills">
-    <h2>Skills & Competencies</h2>
+  <!-- Navbar -->
+  <nav>
     <ul>
-        <li>Python</li>
-        <li>OpenAI API</li>
-        <li>Supabase</li>
-        <li>Botpress</li>
-        <li>Flowise AI</li>
-        <li>React</li>
-        <li>TypeScript</li>
-        <li>Tailwind CSS</li>
-        <li>SQL</li>
-        <li>Git</li>
-        <li>Problem-solving</li>
-        <li>Collaboration</li>
-        <li>Communication</li>
-        <li>Presentation</li>
-        <li>Critical Thinking</li>
-        <li>Adaptability</li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</div>
+  </nav>
 
-<!-- Certificates -->
-<div class="certificates">
+  <!-- Cover Banner -->
+  <div class="cover">
+    <img src="images/cover.jpg.png.png" alt="Cover Banner">
+  </div>
+  <div class="tagline">IT Support Associate | Psychology Graduate | Emerging AI Innovator</div>
+  <div class="section">
+    <p>A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. Dedicated to building ethical, human-centered solutions through intelligent design.</p>
+  </div>
+
+  <!-- About Me -->
+  <div class="section about" id="about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I am a <strong>versatile problem-solver</strong> with a foundation in psychology and hands-on experience in AI/ML development. My passion lies in combining <strong>behavioral insight with cutting-edge technology</strong> to design practical, ethical, and human-centered solutions.</p>
+      <p>With <strong>resilience and adaptability</strong>, I tackle complex challenges and deliver value-driven outcomes in education, employment, and technology. My goal is to apply <strong>interdisciplinary thinking</strong> to build inclusive, ethical, and impactful AI solutions.</p>
+    </div>
+    <div class="about-img">
+      <img src="images/profile.jpg.png.jpeg" alt="Profile Photo">
+    </div>
+  </div>
+
+  <!-- Career Objective & My Approach -->
+  <div class="section">
+    <h2>Career Objective</h2>
+    <p>Seeking opportunities in AI, data analytics, or intelligent system development, particularly in career development, education, or health tech.</p>
+
+    <h2>My Approach</h2>
+    <ul>
+      <li><strong>Human-Centered Design:</strong> Using psychology principles to create intuitive and accessible solutions.</li>
+      <li><strong>Technical Excellence:</strong> Building robust applications with modern tools and best practices.</li>
+      <li><strong>Ethical AI:</strong> Committed to developing fair, transparent, and beneficial AI systems.</li>
+    </ul>
+  </div>
+
+  <!-- Projects -->
+  <div class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <!-- Example Project Card -->
+      <div class="card" style="background:linear-gradient(135deg,#6a11cb 0%,#2575fc 100%); color:white;">
+        <div class="card-inner">
+          <h3>IT Master Chatbot</h3>
+          <img src="images/it-master-chatbot.png.png" alt="IT Master Chatbot">
+          <div class="card-overlay">
+            <p>Conversational AI learning companion for beginners.</p>
+            <p><strong>Tech:</strong> Botpress, NLP, Conversation Design</p>
+            <a class="btn btn-demo" href="https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json" target="_blank">Live Demo</a>
+            <a class="btn btn-github" href="https://github.com/Sanelise01/it-master-chatbot" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for other projects -->
+    </div>
+  </div>
+
+  <!-- Certificates -->
+  <div class="section" id="certificates">
     <h2>Certificates</h2>
-
-    <div class="certificate-card">
-        <a href="https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a" target="_blank">
-            <img src="images/certificate-placeholder.png" alt="Introduction to AI">
+    <div class="certificates">
+      <div class="cert-card">
+        <div class="card-inner">
+          <img src="images/certificate-placeholder.png" alt="Certificate">
+          <div class="card-overlay">
             <p>Introduction to Artificial Intelligence (AI)</p>
-        </a>
+            <a class="btn btn-demo" href="https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a" target="_blank">View Certificate</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for other certificates -->
     </div>
+  </div>
 
-    <div class="certificate-card">
-        <a href="https://coursera.org/share/424029d2939ebc71656afba735f93132" target="_blank">
-            <img src="images/certificate-placeholder.png" alt="Developing Interpersonal Skills">
-            <p>Developing Interpersonal Skills</p>
-        </a>
-    </div>
+  <!-- Contact -->
+  <div class="section contact" id="contact">
+    <h2>Get In Touch</h2>
+    <p>Let's connect and explore opportunities to collaborate on meaningful projects.</p>
+    <p><strong>Location:</strong> Currently based in South Africa<br>_Open to remote opportunities_</p>
 
-    <div class="certificate-card">
-        <a href="https://coursera.org/share/ad6a6eeb0e65dc8951dac04bfc5c843d" target="_blank">
-            <img src="images/certificate-placeholder.png" alt="Introduction to Generative AI">
-            <p>Introduction to Generative AI</p>
-        </a>
-    </div>
+    <h3>Contact Me</h3>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:sanelisematanzima@gmail.com">sanelisematanzima@gmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/Sanelise01">Sanelise01</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sanelise-matanzima">Sanelise Matanzima</a></li>
+      <li><strong>Download CV:</strong> <a href="SmartResume.pdf">SmartResume.pdf</a></li>
+    </ul>
 
-    <!-- Repeat for all 13 certificates -->
-</div>
+    <h3>Let's Build Something Amazing</h3>
+    <p>I'm passionate about creating ethical AI solutions that make a real difference. Whether you have a project in mind or want to explore collaboration opportunities, I'd love to hear from you.</p>
 
-<!-- Contact -->
-<div class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:sanelisematanzima@gmail.com">sanelisematanzima@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Sanelise01">Sanelise01</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sanelise-matanzima">Sanelise Matanzima</a></p>
-    <a class="download-cv" href="SmartResume.pdf" download>Download CV</a>
-</div>
+    <p><strong>Start a Conversation</strong><br>Sanelise Matanzima<br>Psychology Graduate & Emerging AI Innovator</p>
+    <p><em>Building ethical, human-centered AI solutions • © 2025</em></p>
+  </div>
 
 </body>
 </html>
