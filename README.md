@@ -162,9 +162,9 @@ Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, 
 
 ---
 
-## Contact Me
+## ## Contact Me
 
-- **Email:** sanelisematanzima@gmail.com  
+- **Email:** [sanelisematanzima@gmail.com](mailto:sanelisematanzima@gmail.com)  
 - **GitHub:** [Sanelise01](https://github.com/Sanelise01)  
-- **LinkedIn:** [Sanelise Matanzima](https://www.linkedin.com/in/sanelise-matanzima/)  
+- **LinkedIn:** [Sanelise Matanzima](https://www.linkedin.com/in/sanelise-matanzima)  
 - **Download CV:** [SmartResume.pdf](SmartResume.pdf)
