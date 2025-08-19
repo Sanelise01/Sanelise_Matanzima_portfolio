@@ -10,6 +10,7 @@
 <div style="text-align:center; margin-bottom:40px; font-size:18px; font-weight:bold; color:#2c3e50;">
 IT Support Associate | Psychology Graduate | Emerging AI Innovator
 </div>
+---
 A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. Dedicated to building ethical, human-centered solutions through intelligent design.
 
 ---
@@ -26,7 +27,10 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 <img src="images/profile.jpg.png.jpeg" alt="Profile Photo" style="width:200px; height:200px; object-fit:cover; border-radius:12px; border:3px solid #3498db;"/>
 </div>
 </div>
+---
+## Career Objective
 
+Seeking opportunities in AI, data analytics, or intelligent system development, particularly in career development, education, or health tech.
 ---
 
 ## Projects
