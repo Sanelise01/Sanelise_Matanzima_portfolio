@@ -96,6 +96,7 @@ Tablet-friendly UX/UI prototype streamlining industrial machine maintenance chec
 Problem-solving • Collaboration • Communication • Presentation • Critical Thinking • Adaptability  
 
 ---
+[![Download CV](https://img.shields.io/badge/Download%20CV-PDF-3498DB?style=for-the-badge&logo=adobeacrobat&logoColor=white)](SmartResume.pdf)
 
 ## 📬 Contact Me  
 📧 Email: [sanelisematanzima@gmail.com](mailto:sanelisematanzima@gmail.com)  
