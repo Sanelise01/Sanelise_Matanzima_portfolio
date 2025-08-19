@@ -119,6 +119,7 @@ Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, 
 
 <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
 
+<!-- All 13 certificates as cards with links -->
 <div style="flex:1 1 280px; max-width:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); overflow:hidden;">
 <img src="images/certificate-placeholder.png" alt="Certificate" style="width:100%; height:160px; object-fit:cover;"/>
 <div style="padding:10px; text-align:center;">
@@ -140,9 +141,24 @@ Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, 
 </div>
 </div>
 
-<!-- Add remaining certificates similarly -->
-
+<div style="flex:1 1 280px; max-width:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); overflow:hidden;">
+<img src="images/certificate-placeholder.png" alt="Certificate" style="width:100%; height:160px; object-fit:cover;"/>
+<div style="padding:10px; text-align:center;">
+<a href="https://coursera.org/share/a6281597ce5be7c5b209010f3d438359" target="_blank" style="text-decoration:none; font-weight:bold; color:#2c3e50;">AI Foundations: Prompt Engineering with ChatGPT</a>
 </div>
+</div>
+
+<div style="flex:1 1 280px; max-width:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); overflow:hidden;">
+<img src="images/certificate-placeholder.png" alt="Certificate" style="width:100%; height:160px; object-fit:cover;"/>
+<div style="padding:10px; text-align:center;">
+<a href="https://coursera.org/share/b7435e8ddd655f498a54c1b8add9acc2" target="_blank" style="text-decoration:none; font-weight:bold; color:#2c3e50;">Trustworthy Generative AI</a>
+</div>
+</div>
+
+<div style="flex:1 1 280px; max-width:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); overflow:hidden;">
+<img src="images/certificate-placeholder.png" alt="Certificate" style="width:100%; height:160px; object-fit:cover;"/>
+<div style="padding:10px; text-align:center;">
+<a href="https
 
 ---
 
