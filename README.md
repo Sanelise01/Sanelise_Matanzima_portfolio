@@ -32,10 +32,10 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 <div style="display:flex; flex-wrap:wrap; gap:25px; justify-content:center;">
 
 <!-- IT Master Chatbot -->
-<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#6a11cb 0%,#2575fc 100%); color:white; box-shadow:0 6px 15px rgba(0,0,0,0.25);">
-<img src="images/it-master-chatbot.png.png" alt="IT Master Chatbot" style="width:100%; height:180px; object-fit:cover;"/>
-<div style="padding:15px;">
-<h3>IT Master Chatbot</h3>
+<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#6a11cb 0%,#2575fc 100%); color:white; box-shadow:0 6px 15px rgba(0,0,0,0.25); text-align:center;">
+<h3 style="margin-top:15px;">IT Master Chatbot</h3>
+<img src="images/it-master-chatbot.png.png" alt="IT Master Chatbot" style="width:100%; height:180px; object-fit:cover; margin-top:10px;"/>
+<div style="padding:15px; text-align:left;">
 <p>Conversational AI learning companion for beginners.</p>
 <p><strong>Tech:</strong> Botpress, NLP, Conversation Design</p>
 <div style="margin-top:10px;">
@@ -45,11 +45,11 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 </div>
 </div>
 
-<!-- Career Canvas -->
-<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#ff416c 0%,#ff4b2b 100%); color:white; box-shadow:0 6px 15px rgba(0,0,0,0.25);">
-<img src="images/career-canvas.png.png" alt="Career Canvas Smart Build" style="width:100%; height:180px; object-fit:cover;"/>
-<div style="padding:15px;">
-<h3>Career Canvas Smart Build</h3>
+<!-- Career Canvas Smart Build -->
+<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#ff416c 0%,#ff4b2b 100%); color:white; box-shadow:0 6px 15px rgba(0,0,0,0.25); text-align:center;">
+<h3 style="margin-top:15px;">Career Canvas Smart Build</h3>
+<img src="images/career-canvas.png.png" alt="Career Canvas Smart Build" style="width:100%; height:180px; object-fit:cover; margin-top:10px;"/>
+<div style="padding:15px; text-align:left;">
 <p>Professional document platform with responsive design for cross-device use.</p>
 <p><strong>Tech:</strong> React, TypeScript, Tailwind CSS</p>
 <div style="margin-top:10px;">
@@ -60,10 +60,10 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 </div>
 
 <!-- CreatiVerseAI -->
-<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#1c92d2 0%,#f2fcfe 100%); color:black; box-shadow:0 6px 15px rgba(0,0,0,0.25);">
-<img src="images/creativerseai.png.png.png" alt="CreatiVerseAI" style="width:100%; height:180px; object-fit:cover;"/>
-<div style="padding:15px;">
-<h3>CreatiVerseAI</h3>
+<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#1c92d2 0%,#f2fcfe 100%); color:black; box-shadow:0 6px 15px rgba(0,0,0,0.25); text-align:center;">
+<h3 style="margin-top:15px;">CreatiVerseAI</h3>
+<img src="images/creativerseai.png.png.png" alt="CreatiVerseAI" style="width:100%; height:180px; object-fit:cover; margin-top:10px;"/>
+<div style="padding:15px; text-align:left;">
 <p>AI-powered creative writing tool generating poems, stories, and prompts.</p>
 <p><strong>Tech:</strong> Groq API, LLaMA 3.3, Python, Streamlit</p>
 <div style="margin-top:10px;">
@@ -74,10 +74,10 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 </div>
 
 <!-- Fairness Audit Wizard -->
-<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#00c6ff 0%,#0072ff 100%); color:white; box-shadow:0 6px 15px rgba(0,0,0,0.25);">
-<img src="images/fairness-audit.png.png.png" alt="Fairness Audit Wizard" style="width:100%; height:180px; object-fit:cover;"/>
-<div style="padding:15px;">
-<h3>Fairness Audit Wizard</h3>
+<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#00c6ff 0%,#0072ff 100%); color:white; box-shadow:0 6px 15px rgba(0,0,0,0.25); text-align:center;">
+<h3 style="margin-top:15px;">Fairness Audit Wizard</h3>
+<img src="images/fairness-audit.png.png.png" alt="Fairness Audit Wizard" style="width:100%; height:180px; object-fit:cover; margin-top:10px;"/>
+<div style="padding:15px; text-align:left;">
 <p>Analytical tool for bias detection in ML models.</p>
 <p><strong>Tech:</strong> Python, Pandas, Scikit-learn, Plotly</p>
 <div style="margin-top:10px;">
@@ -87,11 +87,11 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 </div>
 </div>
 
-<!-- Machine Daily Check -->
-<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#f7971e 0%,#ffd200 100%); color:black; box-shadow:0 6px 15px rgba(0,0,0,0.25);">
-<img src="images/machine-daily-check.png.png.png" alt="Machine Daily Check Prototype" style="width:100%; height:180px; object-fit:cover;"/>
-<div style="padding:15px;">
-<h3>Machine Daily Check Prototype</h3>
+<!-- Machine Daily Check Prototype -->
+<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#f7971e 0%,#ffd200 100%); color:black; box-shadow:0 6px 15px rgba(0,0,0,0.25); text-align:center;">
+<h3 style="margin-top:15px;">Machine Daily Check Prototype</h3>
+<img src="images/machine-daily-check.png.png.png" alt="Machine Daily Check Prototype" style="width:100%; height:180px; object-fit:cover; margin-top:10px;"/>
+<div style="padding:15px; text-align:left;">
 <p>Tablet-friendly UX/UI prototype streamlining industrial machine maintenance checks.</p>
 <p><strong>Tech:</strong> Figma, UX Design, Prototyping</p>
 <div style="margin-top:10px;">
@@ -140,7 +140,7 @@ Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, 
 </div>
 </div>
 
-<!-- Repeat similar cards for all other certificates with your links -->
+<!-- Add remaining certificates similarly -->
 
 </div>
 
@@ -148,4 +148,7 @@ Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, 
 
 ## Contact Me
 
-[Email](mailto:sanelisematanzima@gmail.com) | [GitHub](https://github.com/Sanelise01) | [LinkedIn](https://linkedin.com/in/sanelise-matanzima) | [Download CV](SmartResume.pdf)
+- **Email:** sanelisematanzima@gmail.com  
+- **GitHub:** [Sanelise01](https://github.com/Sanelise01)  
+- **LinkedIn:** [Sanelise Matanzima](https://www.linkedin.com/in/sanelise-matanzima/)  
+- **Download CV:** [SmartResume.pdf](SmartResume.pdf)
