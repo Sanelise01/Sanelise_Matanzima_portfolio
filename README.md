@@ -10,54 +10,62 @@ Welcome to my personal portfolio! I design ethical, human-centered AI solutions 
 
 ## About Me
 
-![Profile](images/profile.jpg.png)
+<div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
 
+<div style="flex: 1; min-width: 250px;">
 I am a versatile problem-solver with a strong foundation in psychology and hands-on experience in AI/ML development. My passion lies in combining behavioral insights with cutting-edge technology to design practical, ethical, and human-centered solutions.
 
 With resilience and adaptability, I tackle complex challenges and deliver value-driven outcomes across education, employment, and technology initiatives. My goal is to apply interdisciplinary thinking to build inclusive, ethical, and impactful AI solutions that make a meaningful difference.
+</div>
+
+<div style="flex: 0 0 200px;">
+<img src="images/profile.jpg.png" alt="Sanelise Matanzima" style="width: 200px; height: 200px; object-fit: cover; border-radius: 0;">
+</div>
+
+</div>
 
 ---
 
 ## Projects
 
 ### IT Master Chatbot
-![IT Master Chatbot](images/it-master-chatbot.png)  
+<img src="images/it-master-chatbot.png" alt="IT Master Chatbot" style="width:100%; max-width:500px;"/>
 **Description:** Conversational AI learning companion for beginners.  
-**Tech Stack:** Botpress, NLP, Conversation Design
+**Tech Stack:** Botpress, NLP, Conversation Design  
+**Links:** [Live Demo](https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json) | [GitHub](https://github.com/Sanelise01/it-master-chatbot)
 
 ### Career Canvas Smart Build
-![Career Canvas Smart Build](images/career-canvas.png)  
+<img src="images/career-canvas.png" alt="Career Canvas Smart Build" style="width:100%; max-width:500px;"/>
 **Description:** Professional document platform with responsive design for cross-device use.  
-**Tech Stack:** React, TypeScript, Tailwind CSS
+**Tech Stack:** React, TypeScript, Tailwind CSS  
+**Links:** [Live Demo](https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8) | [GitHub](https://github.com/Sanelise01/career-canvas-smart-build)
 
 ### CreatiVerseAI
-![CreatiVerseAI](images/creativerseai.png)  
+<img src="images/creativerseai.png" alt="CreatiVerseAI" style="width:100%; max-width:500px;"/>
 **Description:** AI-powered creative writing tool generating poems, stories, and prompts using LLaMA 3.3 and Groq API.  
-**Tech Stack:** Groq API, LLaMA 3.3, Python, Streamlit
+**Tech Stack:** Groq API, LLaMA 3.3, Python, Streamlit  
+**Links:** [Live Demo](https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299) | [GitHub](https://github.com/Sanelise01/creativerseai)
 
 ### Fairness Audit Wizard
-![Fairness Audit Wizard](images/fairness-audit.png)  
+<img src="images/fairness-audit.png" alt="Fairness Audit Wizard" style="width:100%; max-width:500px;"/>
 **Description:** Analytical tool for bias detection in ML models with dashboards and mitigation insights.  
-**Tech Stack:** Python, Pandas, Scikit-learn, Plotly
+**Tech Stack:** Python, Pandas, Scikit-learn, Plotly  
+**Links:** [Live Demo](https://lovable.dev/projects/58f62fa0-cadc-42b7-9d05-3732e176e4ab) | [GitHub](https://github.com/Sanelise01/fairness-audit-wizard)
 
 ### Machine Daily Check Prototype
-![Machine Daily Check Prototype](images/machine-daily-check.png)  
+<img src="images/machine-daily-check.png" alt="Machine Daily Check Prototype" style="width:100%; max-width:500px;"/>
 **Description:** Tablet-friendly UX/UI prototype streamlining industrial machine maintenance checks.  
-**Tech Stack:** Figma, UX Design, Prototyping
+**Tech Stack:** Figma, UX Design, Prototyping  
+**Links:** [Live Demo](https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3) | [GitHub](https://github.com/Sanelise01/machine-daily-check-prototype)
 
 ---
 
 ## Skills & Competencies
 
 ### Technical Skills
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-000000?style=for-the-badge&logo=openai&logoColor=white)
+- Python, OpenAI API, Supabase, Botpress, Flowise AI  
+- React, TypeScript, Tailwind CSS  
+- SQL, Git, Figma, Human-Centered Design  
 
 ### Core Competencies
 - Problem-solving  
@@ -71,13 +79,11 @@ With resilience and adaptability, I tackle complex challenges and deliver value-
 
 ## Contact Me
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sanelisematanzima@gmail.com)  
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sanelise01)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sanelise-matanzima)  
-[![Portfolio](https://img.shields.io/badge/Portfolio-3498DB?style=for-the-badge)](https://Sanelise01.github.io/sanelise-portfolio/)  
-[![Download CV](https://img.shields.io/badge/Download%20CV-PDF-3498DB?style=for-the-badge&logo=adobeacrobat&logoColor=white)](SmartResume.pdf)
+[Email](mailto:sanelisematanzima@gmail.com) | [GitHub](https://github.com/Sanelise01) | [LinkedIn](https://linkedin.com/in/sanelise-matanzima) | [Portfolio](https://Sanelise01.github.io/sanelise-portfolio/)  
+[Download CV](SmartResume.pdf)
 
 ---
 
 &copy; 2025 Sanelise Matanzima. All rights reserved.
+
  
