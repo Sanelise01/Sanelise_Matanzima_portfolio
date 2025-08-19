@@ -1,8 +1,13 @@
 # Sanelise Matanzima — Portfolio
 
 <!-- Cover Banner -->
-<div style="text-align:center; margin-bottom:40px;">
+<div style="text-align:center; margin-bottom:20px;">
 <img src="images/cover.jpg.png.png" alt="Cover Banner" style="width:100%; max-height:300px; object-fit:cover; border-radius:15px;"/>
+</div>
+
+<!-- Tagline under cover -->
+<div style="text-align:center; margin-bottom:40px; font-size:18px; font-weight:bold; color:#2c3e50;">
+IT Support Associate | Psychology Graduate | Emerging AI Innovator
 </div>
 
 ---
@@ -114,7 +119,6 @@ Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, 
 
 <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
 
-<!-- Example certificate card -->
 <div style="flex:1 1 280px; max-width:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); overflow:hidden;">
 <img src="images/certificate-placeholder.png" alt="Certificate" style="width:100%; height:160px; object-fit:cover;"/>
 <div style="padding:10px; text-align:center;">
@@ -129,7 +133,14 @@ Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, 
 </div>
 </div>
 
-<!-- Repeat similar cards for all other certificates -->
+<div style="flex:1 1 280px; max-width:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); overflow:hidden;">
+<img src="images/certificate-placeholder.png" alt="Certificate" style="width:100%; height:160px; object-fit:cover;"/>
+<div style="padding:10px; text-align:center;">
+<a href="https://coursera.org/share/ad6a6eeb0e65dc8951dac04bfc5c843d" target="_blank" style="text-decoration:none; font-weight:bold; color:#2c3e50;">Introduction to Generative AI</a>
+</div>
+</div>
+
+<!-- Repeat similar cards for all other certificates with your links -->
 
 </div>
 
@@ -138,5 +149,3 @@ Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, 
 ## Contact Me
 
 [Email](mailto:sanelisematanzima@gmail.com) | [GitHub](https://github.com/Sanelise01) | [LinkedIn](https://linkedin.com/in/sanelise-matanzima) | [Download CV](SmartResume.pdf)
-
-
