@@ -4,7 +4,7 @@
 
 **IT Support Associate | Psychology Graduate | Emerging AI Innovator**
 
-Welcome! I design **ethical, human-centered AI solutions** that combine behavioral insight with technical expertise. My work focuses on creating impactful tools for **education, career development, and technology-driven initiatives**.
+Welcome! I design **ethical, human-centered AI solutions** combining behavioral insight with technical expertise. My work focuses on **education, career development, and technology-driven initiatives**.
 
 ---
 
@@ -19,7 +19,7 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 </div>
 
 <div style="flex: 0 0 200px;">
-<img src="images/profile.jpg.png.jpeg" alt="Sanelise Matanzima" style="width: 200px; height: 200px; object-fit: cover; border: 3px solid #3498db; border-radius: 12px;"/>
+<img src="images/profile.jpg.png.jpeg" alt="Sanelise Matanzima" style="width: 200px; height: 200px; object-fit: cover; border: 3px solid #3498db; border-radius: 10px;"/>
 </div>
 
 </div>
@@ -32,7 +32,7 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 
 <!-- IT Master Chatbot -->
 <div style="flex: 1 1 320px; max-width: 350px; border-radius: 15px; overflow: hidden; background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); color: white; box-shadow: 0 6px 15px rgba(0,0,0,0.25); transition: transform 0.3s;">
-<img src="images/it-master-chatbot.png.png" alt="IT Master Chatbot" style="width:100%;"/>
+<img src="images/it-master-chatbot.png.png" alt="IT Master Chatbot" style="width:100%; height:180px; object-fit: cover;"/>
 <div style="padding: 15px;">
 <h3>IT Master Chatbot</h3>
 <p>Conversational AI learning companion for beginners.</p>
@@ -46,7 +46,7 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 
 <!-- Career Canvas Smart Build -->
 <div style="flex: 1 1 320px; max-width: 350px; border-radius: 15px; overflow: hidden; background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%); color: white; box-shadow: 0 6px 15px rgba(0,0,0,0.25); transition: transform 0.3s;">
-<img src="images/career-canvas.png.png" alt="Career Canvas Smart Build" style="width:100%;"/>
+<img src="images/career-canvas.png.png" alt="Career Canvas Smart Build" style="width:100%; height:180px; object-fit: cover;"/>
 <div style="padding: 15px;">
 <h3>Career Canvas Smart Build</h3>
 <p>Professional document platform with responsive design for cross-device use.</p>
@@ -60,7 +60,7 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 
 <!-- CreatiVerseAI -->
 <div style="flex: 1 1 320px; max-width: 350px; border-radius: 15px; overflow: hidden; background: linear-gradient(135deg, #1c92d2 0%, #f2fcfe 100%); color: black; box-shadow: 0 6px 15px rgba(0,0,0,0.25); transition: transform 0.3s;">
-<img src="images/creativerseai.png.png.png" alt="CreatiVerseAI" style="width:100%;"/>
+<img src="images/creativerseai.png.png.png" alt="CreatiVerseAI" style="width:100%; height:180px; object-fit: cover;"/>
 <div style="padding: 15px;">
 <h3>CreatiVerseAI</h3>
 <p>AI-powered creative writing tool generating poems, stories, and prompts.</p>
@@ -74,7 +74,7 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 
 <!-- Fairness Audit Wizard -->
 <div style="flex: 1 1 320px; max-width: 350px; border-radius: 15px; overflow: hidden; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color: white; box-shadow: 0 6px 15px rgba(0,0,0,0.25); transition: transform 0.3s;">
-<img src="images/fairness-audit.png.png.png" alt="Fairness Audit Wizard" style="width:100%;"/>
+<img src="images/fairness-audit.png.png.png" alt="Fairness Audit Wizard" style="width:100%; height:180px; object-fit: cover;"/>
 <div style="padding: 15px;">
 <h3>Fairness Audit Wizard</h3>
 <p>Analytical tool for bias detection in ML models.</p>
@@ -88,7 +88,7 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 
 <!-- Machine Daily Check Prototype -->
 <div style="flex: 1 1 320px; max-width: 350px; border-radius: 15px; overflow: hidden; background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); color: black; box-shadow: 0 6px 15px rgba(0,0,0,0.25); transition: transform 0.3s;">
-<img src="images/machine-daily-check.png.png.png" alt="Machine Daily Check Prototype" style="width:100%;"/>
+<img src="images/machine-daily-check.png.png.png" alt="Machine Daily Check Prototype" style="width:100%; height:180px; object-fit: cover;"/>
 <div style="padding: 15px;">
 <h3>Machine Daily Check Prototype</h3>
 <p>Tablet-friendly UX/UI prototype streamlining industrial machine maintenance checks.</p>
@@ -131,4 +131,3 @@ Problem-solving | Collaboration | Communication | Presentation | Critical Thinki
 ---
 
 &copy; 2025 Sanelise Matanzima
-
