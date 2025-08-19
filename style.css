@@ -1,197 +1,242 @@
-/* General Body */
+/* ---------------------- GENERAL ---------------------- */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #f0f4f8, #e2ebf5);
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #2c3e50;
+  scroll-behavior: smooth;
 }
 
-/* Cover Banner */
-.cover-banner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-bottom: 5px solid #ff6b6b;
+/* Section common padding */
+.section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
 }
 
-/* Tagline under cover */
+/* ---------------------- NAVBAR ---------------------- */
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 12px 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #3498db;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e67e22;
+}
+
+/* ---------------------- COVER ---------------------- */
+.cover {
+  position: relative;
+  overflow: hidden;
+}
+
+.cover img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
 .tagline {
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: 500;
-    margin: 15px 0;
-    color: #444;
+  text-align: center;
+  margin: 20px 0 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
 }
 
-/* About Me */
-.about-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 40px 5%;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+/* ---------------------- BACKGROUND GRADIENT SECTIONS ---------------------- */
+.section-about {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  color: #2c3e50;
 }
 
-.about-me img {
-    border-radius: 12px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-left: 20px;
-    border: 3px solid #ff6b6b;
+.section-projects {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
 }
 
-.about-me-text {
-    flex: 1;
+.section-certificates {
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  color: white;
 }
 
-/* Projects */
-.projects {
-    margin: 40px 5%;
+.section-contact {
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+  color: #2c3e50;
 }
 
-.project-card {
-    margin-bottom: 40px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
+/* ---------------------- ABOUT ME ---------------------- */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 50px;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+.about-text {
+  flex: 1;
+  min-width: 250px;
 }
 
-.project-card h3 {
-    margin-top: 0;
-    color: #ff6b6b;
+.about-img {
+  flex: 0 0 200px;
 }
 
-.project-card img {
-    width: 100%;
-    max-height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 10px 0;
+.about-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #fff;
 }
 
-.project-buttons a {
-    display: inline-block;
-    padding: 8px 16px;
-    margin-right: 10px;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: 0.3s;
+/* ---------------------- PROJECTS & CARDS ---------------------- */
+.projects, .certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
 }
 
-.project-buttons a:hover {
-    opacity: 0.85;
+.card, .cert-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  flex: 1 1 320px;
+  max-width: 350px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Skills & Competencies */
-.skills {
-    margin: 40px 5%;
+.card:hover, .cert-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
-.skills h2 {
-    margin-bottom: 15px;
-    color: #ff6b6b;
+.card img, .cert-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-.skills ul {
-    list-style: none;
-    padding: 0;
+.card:hover img, .cert-card:hover img {
+  transform: scale(1.1);
 }
 
-.skills li {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-    color: white;
-    display: inline-block;
-    padding: 8px 12px;
-    margin: 6px;
-    border-radius: 12px;
-    font-weight: bold;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.card-overlay, .cert-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.4s ease;
 }
 
-/* Certificates */
-.certificates {
-    margin: 40px 5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+.card:hover .card-overlay, .cert-card:hover .cert-overlay {
+  opacity: 1;
 }
 
-.certificate-card {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
+.card-overlay p, .cert-overlay p {
+  margin: 10px 0;
 }
 
-.certificate-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 5px;
+  transition: transform 0.3s ease;
 }
 
-.certificate-card img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.btn:hover {
+  transform: translateY(-2px);
 }
 
-.certificate-card a {
-    text-decoration: none;
-    color: #6a11cb;
-    font-weight: 600;
+.btn-demo {
+  background: #FFD700;
+  color: black;
 }
 
-.certificate-card a:hover {
-    color: #2575fc;
-    text-decoration: underline;
+.btn-github {
+  background: #2c3e50;
+  color: white;
 }
 
-/* Contact */
-.contact {
-    margin: 40px 5%;
-    text-align: center;
+/* ---------------------- CONTACT ---------------------- */
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin: 10px 0;
 }
 
 .contact a {
-    color: #ff6b6b;
-    text-decoration: none;
-    font-weight: 500;
+  color: #2c3e50;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .contact a:hover {
-    text-decoration: underline;
+  color: #e67e22;
 }
 
-.download-cv {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+/* ---------------------- SCROLL ANIMATIONS ---------------------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.download-cv:hover {
-    opacity: 0.85;
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+@media(max-width:768px) {
+  nav ul { flex-direction: column; gap: 10px; }
+  .about { flex-direction: column; align-items: center; }
+  .about-img { flex: 0 0 auto; }
 }
