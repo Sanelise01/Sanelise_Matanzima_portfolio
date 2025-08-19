@@ -30,45 +30,59 @@ With resilience and adaptability, I tackle complex challenges and deliver value-
 
 <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
 
-<!-- Project Card -->
-<div style="flex: 1 1 300px; max-width: 350px; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 15px; transition: transform 0.3s;">
+<!-- IT Master Chatbot -->
+<div style="flex: 1 1 300px; max-width: 350px; border-radius: 12px; padding: 15px; transition: transform 0.3s, box-shadow 0.3s; background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); color: white; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" 
+     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';" 
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
 <img src="images/it-master-chatbot.png" alt="IT Master Chatbot" style="width:100%; border-radius: 10px;"/>
 <h3>IT Master Chatbot</h3>
 <p>Conversational AI learning companion for beginners.</p>
 <p><strong>Tech Stack:</strong> Botpress, NLP, Conversation Design</p>
-<p><a href="https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json" target="_blank">Live Demo</a> | <a href="https://github.com/Sanelise01/it-master-chatbot" target="_blank">GitHub</a></p>
+<p><a href="https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json" target="_blank" style="color:#FFD700;">Live Demo</a> | <a href="https://github.com/Sanelise01/it-master-chatbot" target="_blank" style="color:#FFD700;">GitHub</a></p>
 </div>
 
-<div style="flex: 1 1 300px; max-width: 350px; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 15px; transition: transform 0.3s;">
+<!-- Career Canvas Smart Build -->
+<div style="flex: 1 1 300px; max-width: 350px; border-radius: 12px; padding: 15px; transition: transform 0.3s, box-shadow 0.3s; background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%); color: white; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" 
+     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';" 
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
 <img src="images/career-canvas.png" alt="Career Canvas Smart Build" style="width:100%; border-radius: 10px;"/>
 <h3>Career Canvas Smart Build</h3>
 <p>Professional document platform with responsive design for cross-device use.</p>
 <p><strong>Tech Stack:</strong> React, TypeScript, Tailwind CSS</p>
-<p><a href="https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8" target="_blank">Live Demo</a> | <a href="https://github.com/Sanelise01/career-canvas-smart-build" target="_blank">GitHub</a></p>
+<p><a href="https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8" target="_blank" style="color:#FFD700;">Live Demo</a> | <a href="https://github.com/Sanelise01/career-canvas-smart-build" target="_blank" style="color:#FFD700;">GitHub</a></p>
 </div>
 
-<div style="flex: 1 1 300px; max-width: 350px; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 15px; transition: transform 0.3s;">
+<!-- CreatiVerseAI -->
+<div style="flex: 1 1 300px; max-width: 350px; border-radius: 12px; padding: 15px; transition: transform 0.3s, box-shadow 0.3s; background: linear-gradient(135deg, #1c92d2 0%, #f2fcfe 100%); color: black; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" 
+     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';" 
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
 <img src="images/creativerseai.png" alt="CreatiVerseAI" style="width:100%; border-radius: 10px;"/>
 <h3>CreatiVerseAI</h3>
 <p>AI-powered creative writing tool generating poems, stories, and prompts.</p>
 <p><strong>Tech Stack:</strong> Groq API, LLaMA 3.3, Python, Streamlit</p>
-<p><a href="https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299" target="_blank">Live Demo</a> | <a href="https://github.com/Sanelise01/creativerseai" target="_blank">GitHub</a></p>
+<p><a href="https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299" target="_blank" style="color:#FFD700;">Live Demo</a> | <a href="https://github.com/Sanelise01/creativerseai" target="_blank" style="color:#FFD700;">GitHub</a></p>
 </div>
 
-<div style="flex: 1 1 300px; max-width: 350px; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 15px; transition: transform 0.3s;">
+<!-- Fairness Audit Wizard -->
+<div style="flex: 1 1 300px; max-width: 350px; border-radius: 12px; padding: 15px; transition: transform 0.3s, box-shadow 0.3s; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color: white; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" 
+     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';" 
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
 <img src="images/fairness-audit.png" alt="Fairness Audit Wizard" style="width:100%; border-radius: 10px;"/>
 <h3>Fairness Audit Wizard</h3>
 <p>Analytical tool for bias detection in ML models.</p>
 <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Plotly</p>
-<p><a href="https://lovable.dev/projects/58f62fa0-cadc-42b7-9d05-3732e176e4ab" target="_blank">Live Demo</a> | <a href="https://github.com/Sanelise01/fairness-audit-wizard" target="_blank">GitHub</a></p>
+<p><a href="https://lovable.dev/projects/58f62fa0-cadc-42b7-9d05-3732e176e4ab" target="_blank" style="color:#FFD700;">Live Demo</a> | <a href="https://github.com/Sanelise01/fairness-audit-wizard" target="_blank" style="color:#FFD700;">GitHub</a></p>
 </div>
 
-<div style="flex: 1 1 300px; max-width: 350px; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 15px; transition: transform 0.3s;">
+<!-- Machine Daily Check Prototype -->
+<div style="flex: 1 1 300px; max-width: 350px; border-radius: 12px; padding: 15px; transition: transform 0.3s, box-shadow 0.3s; background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); color: black; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" 
+     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';" 
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
 <img src="images/machine-daily-check.png" alt="Machine Daily Check Prototype" style="width:100%; border-radius: 10px;"/>
 <h3>Machine Daily Check Prototype</h3>
 <p>Tablet-friendly UX/UI prototype streamlining industrial machine maintenance checks.</p>
 <p><strong>Tech Stack:</strong> Figma, UX Design, Prototyping</p>
-<p><a href="https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3" target="_blank">Live Demo</a> | <a href="https://github.com/Sanelise01/machine-daily-check-prototype" target="_blank">GitHub</a></p>
+<p><a href="https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3" target="_blank" style="color:#FFD700;">Live Demo</a> | <a href="https://github.com/Sanelise01/machine-daily-check-prototype" target="_blank" style="color:#FFD700;">GitHub</a></p>
 </div>
 
 </div>
