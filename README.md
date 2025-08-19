@@ -10,14 +10,21 @@ Welcome to my personal portfolio! I build ethical, human-centered AI solutions, 
 
 ## 👩‍💻 About Me  
 
-<img src="images/profile.jpg.png" alt="Sanelise Profile" width="200" style="border-radius:12px;"/>
-
-I am **Sanelise Matanzima**, a Psychology graduate and emerging AI innovator dedicated to designing solutions that balance human insight with technological innovation.  
+<table>
+<tr>
+<td>
+I am <strong>Sanelise Matanzima</strong>, a Psychology graduate and emerging AI innovator dedicated to designing solutions that balance human insight with technological innovation.<br><br>
 
 Passionate about interdisciplinary problem-solving, I bring creativity, resilience, and technical expertise to every challenge.  
-My work focuses on developing platforms and applications that are inclusive, user-centric, and aligned with ethical standards.  
+My work focuses on developing platforms and applications that are inclusive, user-centric, and aligned with ethical standards.<br><br>
 
-Thriving at the intersection of psychology and technology, I strive to deliver solutions that are not only technically robust but also genuinely human-centered.  
+Thriving at the intersection of psychology and technology, I strive to deliver solutions that are not only technically robust but also genuinely human-centered.
+</td>
+<td>
+<img src="images/profile.jpg.png" alt="Sanelise Profile" width="200" style="object-fit: cover;"/>
+</td>
+</tr>
+</table>
 
 ---
 
