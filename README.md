@@ -1,3 +1,4 @@
+---
 # Sanelise Matanzima — Portfolio
 
 <!-- Cover Banner -->
@@ -9,6 +10,7 @@
 <div style="text-align:center; margin-bottom:40px; font-size:18px; font-weight:bold; color:#2c3e50;">
 IT Support Associate | Psychology Graduate | Emerging AI Innovator
 </div>
+A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. Dedicated to building ethical, human-centered solutions through intelligent design.
 
 ---
 
