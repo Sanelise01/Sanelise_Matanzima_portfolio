@@ -1,29 +1,5 @@
 # Sanelise Matanzima — Portfolio
 
-<!-- Navigation Buttons -->
-<div style="text-align:center; margin-bottom:40px;">
-<a href="#about-me" style="text-decoration:none; margin:5px;">
-  <span style="background:#3498db; color:white; padding:10px 20px; border-radius:8px; font-weight:bold;">Home</span>
-</a>
-<a href="#about-me" style="text-decoration:none; margin:5px;">
-  <span style="background:#2ecc71; color:white; padding:10px 20px; border-radius:8px; font-weight:bold;">About</span>
-</a>
-<a href="#projects" style="text-decoration:none; margin:5px;">
-  <span style="background:#e67e22; color:white; padding:10px 20px; border-radius:8px; font-weight:bold;">Projects</span>
-</a>
-<a href="#skills--competencies" style="text-decoration:none; margin:5px;">
-  <span style="background:#9b59b6; color:white; padding:10px 20px; border-radius:8px; font-weight:bold;">Skills</span>
-</a>
-<a href="#certificates" style="text-decoration:none; margin:5px;">
-  <span style="background:#f1c40f; color:white; padding:10px 20px; border-radius:8px; font-weight:bold;">Certificates</span>
-</a>
-<a href="#contact-me" style="text-decoration:none; margin:5px;">
-  <span style="background:#e74c3c; color:white; padding:10px 20px; border-radius:8px; font-weight:bold;">Contact</span>
-</a>
-</div>
-
----
-
 <!-- Cover Banner -->
 <div style="text-align:center; margin-bottom:40px;">
 <img src="images/cover.jpg.png.png" alt="Cover Banner" style="width:100%; max-height:300px; object-fit:cover; border-radius:15px;"/>
@@ -31,7 +7,7 @@
 
 ---
 
-## About Me <a name="about-me"></a>
+## About Me
 
 <div style="display:flex; flex-wrap: wrap; align-items: flex-start; gap:20px; margin-bottom:50px;">
 <div style="flex:1; min-width:250px; font-size:16px; line-height:1.6;">
@@ -46,7 +22,7 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 
 ---
 
-## Projects <a name="projects"></a>
+## Projects
 
 <div style="display:flex; flex-wrap:wrap; gap:25px; justify-content:center;">
 
@@ -107,5 +83,60 @@ With **resilience and adaptability**, I tackle complex challenges and deliver va
 </div>
 
 <!-- Machine Daily Check -->
-<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gr
+<div style="flex:1 1 320px; max-width:350px; border-radius:15px; overflow:hidden; background:linear-gradient(135deg,#f7971e 0%,#ffd200 100%); color:black; box-shadow:0 6px 15px rgba(0,0,0,0.25);">
+<img src="images/machine-daily-check.png.png.png" alt="Machine Daily Check Prototype" style="width:100%; height:180px; object-fit:cover;"/>
+<div style="padding:15px;">
+<h3>Machine Daily Check Prototype</h3>
+<p>Tablet-friendly UX/UI prototype streamlining industrial machine maintenance checks.</p>
+<p><strong>Tech:</strong> Figma, UX Design, Prototyping</p>
+<div style="margin-top:10px;">
+<a href="https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3" target="_blank" style="background:#FFD700; color:black; padding:6px 12px; border-radius:5px; font-weight:bold; text-decoration:none; margin-right:5px;">Live Demo</a>
+<a href="https://github.com/Sanelise01/machine-daily-check-prototype" target="_blank" style="background:#2c3e50; color:white; padding:6px 12px; border-radius:5px; font-weight:bold; text-decoration:none;">GitHub</a>
+</div>
+</div>
+</div>
+
+</div>
+
+---
+
+## Skills & Competencies
+
+**Technical Skills:**  
+Python, OpenAI API, Supabase, Botpress, Flowise AI, React, TypeScript, Tailwind CSS, SQL, Git  
+
+**Core Competencies:**  
+Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, Adaptability  
+
+---
+
+## Certificates
+
+<div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+
+<!-- Example certificate card -->
+<div style="flex:1 1 280px; max-width:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); overflow:hidden;">
+<img src="images/certificate-placeholder.png" alt="Certificate" style="width:100%; height:160px; object-fit:cover;"/>
+<div style="padding:10px; text-align:center;">
+<a href="https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a" target="_blank" style="text-decoration:none; font-weight:bold; color:#2c3e50;">Introduction to Artificial Intelligence (AI)</a>
+</div>
+</div>
+
+<div style="flex:1 1 280px; max-width:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); overflow:hidden;">
+<img src="images/certificate-placeholder.png" alt="Certificate" style="width:100%; height:160px; object-fit:cover;"/>
+<div style="padding:10px; text-align:center;">
+<a href="https://coursera.org/share/424029d2939ebc71656afba735f93132" target="_blank" style="text-decoration:none; font-weight:bold; color:#2c3e50;">Developing Interpersonal Skills</a>
+</div>
+</div>
+
+<!-- Repeat similar cards for all other certificates -->
+
+</div>
+
+---
+
+## Contact Me
+
+[Email](mailto:sanelisematanzima@gmail.com) | [GitHub](https://github.com/Sanelise01) | [LinkedIn](https://linkedin.com/in/sanelise-matanzima) | [Download CV](SmartResume.pdf)
+
 
