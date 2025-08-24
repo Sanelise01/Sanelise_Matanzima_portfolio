@@ -1,70 +1,88 @@
-document.addEventListener('DOMContentLoaded', () => {
+// ==========================
+// FADE-IN ANIMATIONS ON SCROLL
+// ==========================
+const animateElements = document.querySelectorAll('.animate-on-scroll');
 
-    // --- Mobile Navigation ---
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+const observerOptions = { threshold: 0.1 };
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
+const fadeObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-visible');
+            observer.unobserve(entry.target);
+        }
     });
+}, observerOptions);
 
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
-    });
+animateElements.forEach(el => fadeObserver.observe(el));
 
-    // --- Animation on Scroll ---
-    const observer = new IntersectionObserver((entries) => {
+// ==========================
+// COUNTER ANIMATION FOR STATS
+// ==========================
+const counters = document.querySelectorAll('.stat-number');
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 200; // smaller = faster
+        const increment = target / speed;
+
+        if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    const observerCounter = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                // Animate numbers and progress bars only once
-                if (entry.target.classList.contains('about-stats')) {
-                    animateNumbers();
-                }
-                if (entry.target.classList.contains('skills-proficiencies')) {
-                    fillProgressBars();
-                }
+                updateCount();
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.6 });
 
-    document.querySelectorAll('.animate-on-scroll').forEach(element => {
-        observer.observe(element);
-    });
-
-    // --- Animate Stat Numbers ---
-    function animateNumbers() {
-        const statNumbers = document.querySelectorAll('.stat-number');
-        statNumbers.forEach(stat => {
-            const target = +stat.getAttribute('data-target');
-            let count = 0;
-            const increment = target / 100;
-
-            const updateCount = () => {
-                if (count < target) {
-                    count += increment;
-                    stat.innerText = Math.ceil(count);
-                    requestAnimationFrame(updateCount);
-                } else {
-                    stat.innerText = target;
-                }
-            };
-            updateCount();
-        });
-    }
-
-    // --- Animate Skill Progress Bars ---
-    function fillProgressBars() {
-        const skillLevels = document.querySelectorAll('.skill-level');
-        skillLevels.forEach(skill => {
-            const level = skill.getAttribute('data-level');
-            skill.style.width = level;
-        });
-    }
+    observerCounter.observe(counter);
 });
 
+// ==========================
+// SKILL BARS ANIMATION
+// ==========================
+const skillBars = document.querySelectorAll('.skill-level');
+
+const animateSkills = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const bar = entry.target;
+            const level = bar.getAttribute('data-level');
+            bar.style.width = level;
+            bar.querySelector('span:last-child').innerText = level; // Update percentage text
+            observer.unobserve(bar);
+        }
+    });
+};
+
+const skillObserver = new IntersectionObserver(animateSkills, { threshold: 0.6 });
+
+skillBars.forEach(bar => skillObserver.observe(bar));
+
+// ==========================
+// CORE COMPETENCIES TAG HOVER EFFECT
+// ==========================
+const tags = document.querySelectorAll('.skills-core .core-tags span');
+
+tags.forEach(tag => {
+    tag.addEventListener('mouseenter', () => {
+        tag.style.transform = 'translateY(-5px) scale(1.1)';
+        tag.style.boxShadow = '0 8px 20px rgba(255,118,140,0.4)';
+        tag.style.filter = 'brightness(1.2)';
+    });
+    tag.addEventListener('mouseleave', () => {
+        tag.style.transform = 'translateY(0) scale(1)';
+        tag.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+        tag.style.filter = 'brightness(1)';
+    });
+});
