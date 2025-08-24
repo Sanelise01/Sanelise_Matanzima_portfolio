@@ -88,8 +88,8 @@ Displayed in column format with **images/coursera-badge.png**:
 
 ### Contact Section
 - **Email:** sanelisematanzima@gmail.com  
-- **LinkedIn:** [Professional Network](https://www.linkedin.com/in/sanelisem)  
-- **GitHub:** [Projects & Code](https://github.com/sanelise01)  
+- **LinkedIn:** [Professional Network](www.linkedin.com/in/sanelise-matanzima-76384b309)  
+- **GitHub:** [Projects & Code](https://github.com/Sanelise01)  
 - **Location:** South Africa (Remote Open)
 
 ---
