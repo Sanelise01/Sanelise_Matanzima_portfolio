@@ -1,175 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanelise Matanzima Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanelise Matanzima Portfolio</title>
+<style>
+  /* --- Reset & Base --- */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #f0f0f5;
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+  }
+  a { text-decoration: none; color: inherit; }
+
+  /* --- Typography --- */
+  h1 { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
+  h2 { font-size: 2rem; font-weight: 600; margin-bottom: 20px; color: #a0c4ff; }
+  h3 { font-size: 1.5rem; margin-bottom: 10px; }
+  p { margin-bottom: 15px; font-size: 1rem; line-height: 1.5; color: #e0e0e0; }
+
+  /* --- Buttons --- */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  .btn:hover { transform: translateY(-3px); background: #3730a3; }
+
+  /* --- Container --- */
+  .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+
+  /* --- Home Section --- */
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    animation: fadeIn 1.2s ease;
+  }
+  .home-text { flex: 1 1 500px; padding-right: 20px; }
+  .subtitle { font-size: 1.25rem; color: #a0c4ff; margin-bottom: 20px; }
+  .home-image { flex: 0 0 250px; text-align: center; margin-top: 20px; }
+  .home-image img {
+    width: 250px; height: 250px;
+    object-fit: cover; border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  .home-image img:hover { transform: scale(1.05); }
+
+  /* --- Projects Section --- */
+  #projects { padding: 80px 0; }
+  .projects-section h2 { text-align: center; color: #a0c4ff; margin-bottom: 50px; }
+  .project-card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px; margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  .project-card:hover { transform: translateY(-5px); box-shadow: 0 15px 25px rgba(0,0,0,0.3); }
+  .project-img { width: 200px; height: auto; border-radius: 10px; margin-bottom: 15px; }
+  .project-card ul { list-style: disc; padding-left: 20px; display: inline-block; text-align: left; margin-bottom: 15px; }
+  .project-buttons .btn { margin: 5px; }
+
+  /* --- Certificates Section --- */
+  #certificates { padding: 80px 0; }
+  .certificates h2 { text-align: center; color: #a0c4ff; margin-bottom: 50px; }
+  .certificate-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+  .certificate {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 10px 15px;
+    display: flex; align-items: center;
+    min-width: 280px; max-width: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .certificate:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+  .certificate img { width: 50px; margin-right: 15px; }
+  .certificate span { color: #fff; font-size: 0.95rem; }
+
+  /* --- Contact Section --- */
+  #contact { padding: 80px 0; text-align: center; }
+  #contact h2 { color: #a0c4ff; margin-bottom: 30px; }
+  #contact p { margin-bottom: 10px; }
+
+  /* --- Animations --- */
+  @keyframes fadeIn { 0% { opacity:0; transform: translateY(20px);} 100% { opacity:1; transform: translateY(0);} }
+
+  /* --- Responsive --- */
+  @media (max-width: 900px) {
+    #home { flex-direction: column-reverse; text-align: center; }
+    .home-text { padding-right: 0; }
+    .home-image { margin-top: 40px; }
+  }
+</style>
 </head>
 <body>
 
-  <!-- HOME / HERO SECTION -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hi, I’m <span class="highlight">Sanelise Matanzima</span></h1>
-      <p>IT Support Specialist | Psychology Graduate | Emerging AI Innovator</p>
-      <p>A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. Dedicated to building ethical, human-centered solutions through intelligent design.</p>
-      <a href="#projects" class="btn">View My Projects</a>
-      <a href="#about" class="btn">Learn More About Me</a>
-    </div>
-    <div class="hero-image">
-      <img src="images/profile.jpg.png.jpeg" alt="Sanelise Matanzima Profile">
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
+<!-- HOME -->
+<section id="home" class="container">
+  <div class="home-text">
+    <h1>Sanelise Matanzima</h1>
+    <h2 class="subtitle">IT Support Specialist | Psychology Graduate | Emerging AI Innovator</h2>
     <p>I am a versatile problem-solver with a foundation in psychology and hands-on experience in IT support and AI/ML development. My passion lies in combining behavioral insight with cutting-edge technology to design practical, ethical, and human-centered solutions.</p>
     <p>With resilience and adaptability, I tackle complex challenges and deliver value-driven outcomes in education, employment, and beyond. My goal is to apply interdisciplinary thinking to build inclusive, ethical, and impactful AI solutions.</p>
-    <p><strong>Career Objective:</strong> Seeking opportunities in AI, data analytics, or intelligent system development, particularly in career development, education, or health tech.</p>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="images/it-master-chatbot.png.png" alt="IT Master Chatbot">
-        <h3>IT Master Chatbot (Botpress)</h3>
-        <p>An AI learning companion built for IT beginners, simplifying complex AI concepts through conversational learning.</p>
-      </div>
-      <div class="project-card">
-        <img src="images/career-canvas.png.png" alt="Career Canvas Smart Build">
-        <h3>Career Canvas Smart Build</h3>
-        <p>A web-based platform helping users create professional career documents efficiently with modular templates.</p>
-      </div>
-      <div class="project-card">
-        <img src="images/creativerseai.png.png.png" alt="CreatiVerseAI">
-        <h3>CreatiVerseAI</h3>
-        <p>An AI-driven creative writing tool assisting users to generate high-quality poems, stories, and literary prompts across genres.</p>
-      </div>
-      <div class="project-card">
-        <img src="images/fairness-audit.png.png.png" alt="Fairness Audit Wizard">
-        <h3>Fairness Audit Wizard</h3>
-        <p>An analytical tool to assess and visualize bias in ML models using interactive dashboards and metrics.</p>
-      </div>
-      <div class="project-card">
-        <img src="images/machine-daily-check.png.png.png" alt="Machine Daily Check">
-        <h3>Machine Daily Check Prototype</h3>
-        <p>A mobile-friendly prototype designed to streamline machine maintenance checks in industrial settings.</p>
-      </div>
+    <div class="home-buttons">
+      <a href="#projects" class="btn">Projects</a>
+      <a href="#certificates" class="btn">Certificates</a>
+      <a href="path/to/resume.pdf" class="btn" target="_blank">Resume</a>
     </div>
-  </section>
+  </div>
+  <div class="home-image">
+    <img src="path/to/profile-photo.png" alt="Sanelise Matanzima">
+  </div>
+</section>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="skills">
-    <h2>Technical Skills</h2>
+<!-- PROJECTS -->
+<section id="projects" class="projects-section container">
+  <h2>Projects</h2>
+
+  <!-- IT Master Chatbot -->
+  <div class="project-card">
+    <img src="path/to/it-master-chatbot.png" alt="IT Master Chatbot" class="project-img">
+    <h3>IT Master Chatbot</h3>
+    <p><strong>AI Learning Companion</strong></p>
+    <p>A learning companion built for AI beginners. Simplifies complex AI concepts through conversational learning. Supports follow-up questions, custom learning paths, and educational resources.</p>
+    <p><strong>Tech Stack:</strong> Botpress, NLP, Conversation Design</p>
     <ul>
-      <li>SQL - 80%</li>
-      <li>Git - 85%</li>
-      <li>Python - 75%</li>
-      <li>OpenAI API - 90%</li>
-      <li>Supabase - 85%</li>
-      <li>Flowise AI - 95%</li>
-      <li>Botpress - 90%</li>
-      <li>Figma - 80%</li>
+      <li>Conversational AI learning</li>
+      <li>Custom learning paths</li>
+      <li>Educational resource connections</li>
     </ul>
-  </section>
-
-  <!-- CERTIFICATES SECTION -->
-  <section id="certificates" class="certificates">
-    <h2>Professional Certificates</h2>
-    <div class="certificate-grid">
-      <div class="certificate">
-        <a href="https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a" target="_blank">
-          <img src="images/coursera-badge.png" alt="Introduction to AI">
-          <p>Introduction to Artificial Intelligence (AI)</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/424029d2939ebc71656afba735f93132" target="_blank">
-          <img src="images/coursera-badge.png" alt="Developing Interpersonal Skills">
-          <p>Developing Interpersonal Skills</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/ad6a6eeb0e65dc8951dac04bfc5c843d" target="_blank">
-          <img src="images/coursera-badge.png" alt="Introduction to Generative AI">
-          <p>Introduction to Generative AI</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/a6281597ce5be7c5b209010f3d438359" target="_blank">
-          <img src="images/coursera-badge.png" alt="AI Foundations: Prompt Engineering">
-          <p>AI Foundations: Prompt Engineering with ChatGPT</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/b7435e8ddd655f498a54c1b8add9acc2" target="_blank">
-          <img src="images/coursera-badge.png" alt="Trustworthy Generative AI">
-          <p>Trustworthy Generative AI</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/95692270160e080987fb809f50af1ccb" target="_blank">
-          <img src="images/coursera-badge.png" alt="Introduction to Responsible AI">
-          <p>Introduction to Responsible AI</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/e09e9aa4e64345fe45476080f85f0c8d" target="_blank">
-          <img src="images/coursera-badge.png" alt="Generative AI with LLMs">
-          <p>Generative AI with Large Language Models</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/80055eff26270412a7a8a1dde4386257" target="_blank">
-          <img src="images/coursera-badge.png" alt="Python for Data Science">
-          <p>Python for Data Science, AI & Development</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/daf2a212ac3aad787eb3da760e2b186a" target="_blank">
-          <img src="images/coursera-badge.png" alt="Machine Learning Basics">
-          <p>Machine Learning Basics</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/47fc67540ae6ac1a1cb411fbabc18ccd" target="_blank">
-          <img src="images/coursera-badge.png" alt="AI Essentials">
-          <p>AI Essentials</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/5900153b977c237a5e53c4ff0b28a3de" target="_blank">
-          <img src="images/coursera-badge.png" alt="Verbal Communication Skills">
-          <p>Verbal Communications and Presentation Skills</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/b8c694effc59f58162b611d66527b510" target="_blank">
-          <img src="images/coursera-badge.png" alt="Active Listening Skills">
-          <p>Active Listening: Enhancing Communication Skills</p>
-        </a>
-      </div>
-      <div class="certificate">
-        <a href="https://coursera.org/share/9de76ba1c95976acd8f09fc411e772f9" target="_blank">
-          <img src="images/coursera-badge.png" alt="Professional Emails in English">
-          <p>Write Professional Emails in English</p>
-        </a>
-      </div>
+    <div class="project-buttons">
+      <a href="#" class="btn">View Profile</a>
+      <a href="#" class="btn">View Code</a>
+      <a href="#" class="btn">Live Demo</a>
     </div>
-  </section>
+  </div>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact">
-    <h2>Get In Touch</h2>
-    <p>Email: <a href="mailto:sanelisematanzima@gmail.com">sanelisematanzima@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">Professional Network</a></p>
-    <p>GitHub: <a href="#">Source Code & Projects</a></p>
-    <p>Location: Currently based in South Africa | Open to remote opportunities</p>
-  </section>
+  <!-- Add remaining projects similarly -->
+
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="certificates container">
+  <h2>Professional Certificates</h2>
+  <div class="certificate-grid">
+    <div class="certificate">
+      <a href="https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a" target="_blank">
+        <img src="images/coursera-badge.png" alt="Introduction to AI">
+        <span>Introduction to Artificial Intelligence (AI)</span>
+      </a>
+    </div>
+    <div class="certificate">
+      <a href="https://coursera.org/share/424029d2939ebc71656afba735f93132" target="_blank">
+        <img src="images/coursera-badge.png" alt="Developing Interpersonal Skills">
+        <span>Developing Interpersonal Skills</span>
+      </a>
+    </div>
+    <!-- Add remaining certificates -->
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+  <h2>Get In Touch</h2>
+  <p>Email: <a href="mailto:sanelisematanzima@gmail.com">sanelisematanzima@gmail.com</a></p>
+  <p>LinkedIn: <a href="#">Professional Network</a></p>
+  <p>GitHub: <a href="#">Source Code & Projects</a></p>
+  <p>Location: Currently based in South Africa | Open to remote opportunities</p>
+</section>
 
 </body>
 </html>
