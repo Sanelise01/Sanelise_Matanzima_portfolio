@@ -13,7 +13,7 @@ This repository contains the personal portfolio of **Sanelise Matanzima**, a Psy
 ## 🖥️ Features
 
 ### Home Section
-- **Profile Image**: images/profile.jpeg (aligned right in hero section)
+- **Profile Image**: `images/profile.jpeg` (aligned right in hero section)
 - **Introduction Text**: Left-aligned with fade-in animation
 - **Hero Cards**: Download Resume (`SmartResume.pdf`) and Contact link
 - **Scroll Animation**: Smooth fade-in effects
