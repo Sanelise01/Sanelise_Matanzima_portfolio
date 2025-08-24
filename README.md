@@ -8,10 +8,23 @@ Welcome to the official repository of my professional portfolio! This portfolio 
 
 ## About Me
 
-I am passionate about bridging human understanding with emerging technologies. My background in psychology, combined with hands-on experience in IT support and AI/ML development, allows me to design practical, ethical, and human-centered solutions.
+I am a versatile problem-solver with a foundation in **psychology** and hands-on experience in **IT support and AI/ML development**. My passion lies in combining behavioral insight with cutting-edge technology to design **practical, ethical, and human-centered solutions**.
 
-**Career Objective:**  
-Seeking opportunities in AI, data analytics, or intelligent system development, particularly in career development, education, or health tech.
+With resilience and adaptability, I tackle complex challenges and deliver value-driven outcomes in education, employment, and beyond. My goal is to apply interdisciplinary thinking to build **inclusive, ethical, and impactful AI solutions**.
+
+---
+
+## Career Objective
+
+Seeking opportunity that will allow me to grow professionally while making a **positive impact** on the company.
+
+---
+
+## My Approach
+
+- **Human-Centered Design:** Using psychology principles to create intuitive and accessible solutions  
+- **Technical Excellence:** Building robust applications with modern tools and best practices  
+- **Ethical AI:** Committed to developing fair, transparent, and beneficial AI systems
 
 ---
 
