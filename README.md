@@ -1,85 +1,107 @@
 # Sanelise Matanzima | AI Portfolio
 
-Welcome to the personal portfolio of **Sanelise Matanzima**, a Psychology Graduate and Emerging AI Innovator. This portfolio showcases professional projects, technical skills, certificates, and contact information in a modern, responsive design.
+This repository contains the personal portfolio of **Sanelise Matanzima**, a Psychology Graduate and Emerging AI Innovator. It showcases professional projects, technical skills, certificates, and provides a way to get in touch.
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Portfolio
 
 [View Portfolio Online](https://sanelise01.github.io/Sanelise_Matanzima_portfolio/)
 
 ---
 
-## 🎨 Design Overview
-
-The portfolio features:
-
-- Modern gradient backgrounds (blues/purples) to convey tech expertise
-- Smooth animations and hover effects
-- Clean typography hierarchy
-- Professional color palette
-- Mobile-first responsive design
-- User-friendly navigation with scroll animations
-
----
-
 ## 🖥️ Features
 
-1. **Home / Hero Section**
-   - Introduction with a medium-sized profile image
-   - Professional summary and CTA buttons
-   - Resume download and quick contact card
+### Home Section
+- **Profile Image**: `profile.jpg.png.jpeg`
+- **Introduction Text**: Left-aligned, with description and CTA buttons.
+- **Hero Cards**: Download Resume (`SmartResume.pdf`) and Contact link.
+- **Scroll Animation**: Smooth fade-in effects for content.
 
-2. **About Me Section**
-   - Career objective and approach
-   - Statistics counter: projects, live applications, AI chatbots, UX/UI prototypes
-   - Approach cards: Human-Centered Design, Technical Excellence, Ethical AI
+### About Me Section
+- **Career Summary**: Highlights psychology and AI/ML experience.
+- **Statistics Counters**: 
+  - 5 Projects Completed
+  - 3 Live Applications
+  - 2 AI Chatbots
+  - 1 UX/UI Prototype
+- **My Approach Cards**:
+  - Human-Centered Design
+  - Technical Excellence
+  - Ethical AI
 
-3. **Featured Projects**
-   - **IT Master Chatbot (Botpress)** – AI learning companion
-     - [Live Demo](https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json)
-   - **Career Canvas Smart Build** – Professional document platform
-     - [Live Demo](https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8)
-   - **CreatiVerseAI** – Creative writing tool
-     - [Live Demo](https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299)
-   - **Fairness Audit Wizard** – AI fairness analysis
-     - [Live Demo](https://lovable.dev/projects/64f0b266-2177-4e9a-a88d-168e551e5d8a)
-   - **Machine Daily Check Prototype** – UX/UI tablet interface
-     - [View Design](https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3)
+### Featured Projects
+Each project has a **medium profile image** and details:
 
-4. **Technical Skills**
-   - **AI/ML / OpenAI API** – 90%
-   - **Backend / Supabase** – 85%
-   - **No-Code AI / Flowise AI** – 95%
-   - **Chatbot / Botpress** – 90%
-   - **Design / Figma** – 80%
-   - Core competencies: Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, Adaptability
+1. **IT Master Chatbot (Botpress)** – AI Learning Companion  
+   - Image: `it-master-chatbot.png.png`  
+   - [Live Demo](https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json)  
 
-5. **Certificates**
-   - All certificates with Coursera badge images and clickable links
-   - Examples:
-     - Introduction to Artificial Intelligence (AI)
-     - Developing Interpersonal Skills
-     - AI Foundations: Prompt Engineering with ChatGPT
-     - Generative AI with Large Language Models
-     - Python for Data Science, AI & Development
+2. **Career Canvas Smart Build** – Professional Document Platform  
+   - Image: `career-canvas.png.png`  
+   - [Live Demo](https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8)
 
-6. **Contact Section**
-   - Email, LinkedIn, GitHub, and location
-   - CTA button for direct email communication
+3. **CreatiVerseAI** – Creative Writing Tool  
+   - Image: `creativerseai.png.png.png`  
+   - [Live Demo](https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299)
+
+4. **Fairness Audit Wizard** – AI Fairness Analysis Tool  
+   - Image: `fairness-audit.png.png.png`  
+   - [Live Demo](https://lovable.dev/projects/64f0b266-2177-4e9a-a88d-168e551e5d8a)
+
+5. **Machine Daily Check Prototype** – UX/UI Tablet Interface  
+   - Image: `machine-daily-check.png.png.png`  
+   - [View Design](https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3)
 
 ---
 
-## 🛠️ Technologies Used
+### Technical Skills Section
+- **Technical Proficiencies** (Left to Center aligned):
+  - AI/ML – OpenAI API: 90%
+  - Backend – Supabase: 85%
+  - No-Code AI – Flowise AI: 95%
+  - Chatbot – Botpress: 90%
+  - Design – Figma: 80%
+- **Core Competencies** (Center to Right aligned):
+  - Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, Adaptability
+
+---
+
+### Professional Certificates
+- Displayed in column format with `coursera-badge.png` for each:
+  - [Introduction to Artificial Intelligence (AI)](https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a)
+  - [Developing Interpersonal Skills](https://coursera.org/share/424029d2939ebc71656afba735f93132)
+  - [Introduction to Generative AI](https://coursera.org/share/ad6a6eeb0e65dc8951dac04bfc5c843d)
+  - [AI Foundations: Prompt Engineering with ChatGPT](https://coursera.org/share/a6281597ce5be7c5b209010f3d438359)
+  - [Trustworthy Generative AI](https://coursera.org/share/b7435e8ddd655f498a54c1b8add9acc2)
+  - [Introduction to Responsible AI](https://coursera.org/share/95692270160e080987fb809f50af1ccb)
+  - [Generative AI with Large Language Models](https://coursera.org/share/e09e9aa4e64345fe45476080f85f0c8d)
+  - [Python for Data Science, AI & Development](https://coursera.org/share/80055eff26270412a7a8a1dde4386257)
+  - [Machine Learning Basics](https://coursera.org/share/daf2a212ac3aad787eb3da760e2b186a)
+  - [AI Essentials](https://coursera.org/share/47fc67540ae6ac1a1cb411fbabc18ccd)
+  - [Verbal Communications and Presentation Skills](https://coursera.org/share/5900153b977c237a5e53c4ff0b28a3de)
+  - [Active Listening: Enhancing Communication Skills](https://coursera.org/share/b8c694effc59f58162b611d66527b510)
+  - [Write Professional Emails in English](https://coursera.org/share/9de76ba1c95976acd8f09fc411e772f9)
+
+---
+
+### Contact Section
+- **Email:** sanelisematanzima@gmail.com  
+- **LinkedIn:** [Professional Network](https://www.linkedin.com/in/sanelisem)  
+- **GitHub:** [Projects & Code](https://github.com/sanelise01)  
+- **Location:** South Africa (Remote Open)
+
+---
+
+## 🛠️ Technologies
 
 - **HTML5, CSS3, JavaScript**
-- **Font Awesome** for icons
-- **Google Fonts (Inter)**
-- **Figma** for project design prototypes
-- Responsive design with **flexbox** and **grid**
+- **Google Fonts: Inter**
+- **Font Awesome Icons**
+- **Responsive layout with Flexbox & Grid**
+- **Figma for design prototypes**
 
 ---
 
-## 📁 Project Structure
-
+## 📂 Project Structure
 
