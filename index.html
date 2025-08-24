@@ -1,141 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanelise Matanzima — Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanelise Matanzima | Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Sanelise Matanzima — Psychology graduate and AI innovator showcasing projects, skills, and certifications.">
+  <meta name="keywords" content="AI, Psychology, Portfolio, Projects, Career, IT Support, Machine Learning, Chatbot">
+  <meta name="author" content="Sanelise Matanzima">
+
+  <!-- Social Media Preview -->
+  <meta property="og:title" content="Sanelise Matanzima Portfolio">
+  <meta property="og:description" content="Showcasing AI, IT support, and psychology-inspired projects by Sanelise Matanzima.">
+  <meta property="og:image" content="images/cover.jpg.png.png">
+  <meta property="og:url" content="https://sanelise01.github.io/Sanelise_Matanzima_portfolio/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Header / Hero Section -->
-<header class="hero">
-    <img src="images/cover.jpg.png.png" alt="Cover Banner" class="cover">
-    <div class="hero-text">
-        <h1>Sanelise Matanzima</h1>
-        <h3>IT Support Specialist | Psychology Graduate | Emerging AI Innovator</h3>
-        <p>A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. Dedicated to building ethical, human-centered solutions through intelligent design.</p>
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">View My Projects</a>
-            <a href="#about" class="btn">Learn More About Me</a>
-            <a href="resume.pdf" download class="btn">Download Resume</a>
-        </div>
-    </div>
-</header>
+  <!-- Navbar -->
+  <nav>
+    <h2 class="logo">Sanelise</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<!-- About Section -->
-<section id="about">
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/profile.jpg.png.jpeg" alt="Profile picture of Sanelise Matanzima" class="profile-pic">
+    <h1>Hi, I’m <span>Sanelise Matanzima</span></h1>
+    <p>AI Innovator | Psychology Graduate | IT Support Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
     <h2>About Me</h2>
-    <p>Combining psychology insights with technical skills to create meaningful solutions.</p>
-    <p>I am a versatile problem-solver with a foundation in psychology and hands-on experience in AI/ML development. I aim to build inclusive, ethical, and impactful AI solutions in education, employment, and health tech.</p>
-    <h3>Career Objective</h3>
-    <p>Seeking opportunities in AI, data analytics, or intelligent system development, particularly in career development, education, or health tech.</p>
-</section>
+    <p>
+      I am a BA Psychology graduate currently participating in an IT Support Learnership. 
+      I combine my knowledge of psychology with emerging technologies to build AI-driven 
+      solutions that address real-world problems, from fairness in machine learning to 
+      gender-based violence interventions.
+    </p>
+  </section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
 
-        <!-- Project 1 -->
-        <div class="project-card">
-            <img src="images/it-master-chatbot.png.png" alt="IT Master Chatbot">
-            <h3>IT Master Chatbot</h3>
-            <p>AI Learning Companion for beginners, teaching ML concepts via conversation.</p>
-            <p><strong>Tech Stack:</strong> Botpress, NLP, Conversation Design</p>
-            <div class="project-links">
-                <a href="#">View Profile</a>
-                <a href="#">View Code</a>
-                <a href="#">Live Demo</a>
-            </div>
-        </div>
+      <div class="project-card">
+        <img src="images/machine-daily-check.png.png.png" alt="Machine Daily Check Prototype">
+        <h3>Machine Daily Check</h3>
+        <p>Prototype in Figma to streamline machine inspection processes.</p>
+      </div>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <img src="images/career-canvas.png.png" alt="Career Canvas Smart Build">
-            <h3>Career Canvas Smart Build</h3>
-            <p>Platform to create professional career documents efficiently.</p>
-            <p><strong>Tech Stack:</strong> React, TypeScript, Tailwind CSS, Lovable AI</p>
-            <div class="project-links">
-                <a href="#">View Profile</a>
-                <a href="#">View Code</a>
-                <a href="#">Live Demo</a>
-            </div>
-        </div>
+      <div class="project-card">
+        <img src="images/it-master-chatbot.png.png" alt="IT Master Chatbot">
+        <h3>IT Master Chatbot</h3>
+        <p>AI-powered chatbot assisting IT learners with troubleshooting.</p>
+      </div>
 
-        <!-- Project 3 -->
-        <div class="project-card">
-            <img src="images/creativerseai.png.png.png" alt="CreatiVerseAI">
-            <h3>CreatiVerseAI</h3>
-            <p>AI-driven creative writing tool generating poems, stories, and prompts.</p>
-            <p><strong>Tech Stack:</strong> Groq API, LLaMA 3.3, Python, Streamlit</p>
-            <div class="project-links">
-                <a href="#">View Profile</a>
-                <a href="#">Live Demo</a>
-            </div>
-        </div>
+      <div class="project-card">
+        <img src="images/fairness-audit.png.png.png" alt="Fairness Audit Dashboard">
+        <h3>Fairness Audit</h3>
+        <p>Dashboard for fairness analysis and bias detection in ML models.</p>
+      </div>
 
-        <!-- Project 4 -->
-        <div class="project-card">
-            <img src="images/fairness-audit.png.png.png" alt="Fairness Audit Wizard">
-            <h3>Fairness Audit Wizard</h3>
-            <p>Analytical tool to assess and visualize bias in ML models.</p>
-            <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Plotly</p>
-            <div class="project-links">
-                <a href="#">View Profile</a>
-                <a href="#">View Code</a>
-                <a href="#">Live Demo</a>
-            </div>
-        </div>
+      <div class="project-card">
+        <img src="images/creativerseai.png.png.png" alt="CreatiVerse AI">
+        <h3>CreatiVerse AI</h3>
+        <p>Creative writing assistant powered by LLaMA 3.3 and Groq API.</p>
+      </div>
 
-        <!-- Project 5 -->
-        <div class="project-card">
-            <img src="images/machine-daily-check.png.png.png" alt="Machine Daily Check">
-            <h3>Machine Daily Check Prototype</h3>
-            <p>Tablet-friendly UX/UI prototype for industrial machine maintenance.</p>
-            <p><strong>Tech Stack:</strong> Figma, UX Design, Prototyping</p>
-            <div class="project-links">
-                <a href="#">View Profile</a>
-                <a href="#">View Design</a>
-            </div>
-        </div>
+      <div class="project-card">
+        <img src="images/career-canvas.png.png" alt="Career Canvas Smart Build">
+        <h3>Career Canvas</h3>
+        <p>AI-driven career counsellor that identifies skill gaps and suggests courses.</p>
+      </div>
 
     </div>
-</section>
+  </section>
 
-<!-- Skills Section -->
-<section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>SQL — 80%</li>
-        <li>Git — 85%</li>
-        <li>Python — 75%</li>
-        <li>OpenAI API — 90%</li>
-        <li>Supabase — 85%</li>
-        <li>Flowise AI — 95%</li>
-        <li>Botpress — 90%</li>
-        <li>Figma — 80%</li>
-    </ul>
-    <h3>Core Competencies</h3>
-    <ul>
-        <li>Problem-solving</li>
-        <li>Collaboration</li>
-        <li>Communication</li>
-        <li>Critical Thinking</li>
-        <li>Adaptability</li>
-    </ul>
-</section>
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <h3>Google IT Support</h3>
+        <p>Coursera Certificate</p>
+        <a href="#" class="btn">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>AI & Machine Learning</h3>
+        <p>Coursera Specialization</p>
+        <a href="#" class="btn">View Certificate</a>
+      </div>
+    </div>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Get In Touch</h2>
-    <p>Email: sanelisematanzima@gmail.com</p>
-    <p>LinkedIn: <a href="#">Professional Network</a></p>
-    <p>GitHub: <a href="#">Source Code & Projects</a></p>
-    <p>Location: South Africa — Open to remote opportunities</p>
-    <a href="#contact" class="btn">Start a Conversation</a>
-</section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sanelise@example.com">sanelise@example.com</a></p>
+  </section>
 
-<script src="script.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sanelise Matanzima</p>
+    <div class="socials">
+      <a href="https://github.com/Sanelise01" target="_blank">🐙 GitHub</a>
+      <a href="https://www.linkedin.com/in/sanelise-matanzima" target="_blank">💼 LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
