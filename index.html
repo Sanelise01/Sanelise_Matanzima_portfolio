@@ -1,320 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sanelise Matanzima Portfolio</title>
-<style>
-  /* --- Reset & Base --- */
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #f0f0f5;
-    scroll-behavior: smooth;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-  }
-  a { text-decoration: none; color: inherit; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanelise Matanzima | AI Portfolio</title>
+    <meta name="description" content="The portfolio of Sanelise Matanzima, an Emerging AI Innovator and Psychology Graduate.">
 
-  /* --- Navbar --- */
-  nav {
-    position: sticky;
-    top: 0;
-    background: rgba(30, 60, 114, 0.95);
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-  }
-  nav a {
-    color: #f0f0f5;
-    font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: background 0.3s, color 0.3s;
-  }
-  nav a:hover { background: #4f46e5; color: #fff; }
-  nav a.active { background: #a0c4ff; color: #1e3c72; font-weight: 700; }
+    <link rel="stylesheet" href="style.css">
 
-  /* --- Typography --- */
-  h1 { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
-  h2 { font-size: 2rem; font-weight: 600; margin-bottom: 20px; color: #a0c4ff; }
-  h3 { font-size: 1.5rem; margin-bottom: 10px; }
-  p { margin-bottom: 15px; font-size: 1rem; line-height: 1.5; color: #e0e0e0; }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-  /* --- Buttons --- */
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 8px;
-    background: #4f46e5;
-    color: #fff;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  .btn:hover { transform: translateY(-3px) scale(1.05); }
-
-  /* --- Container --- */
-  .container { max-width: 1200px; margin: auto; padding: 0 20px; }
-
-  /* --- Scroll Animation --- */
-  .scroll-animate {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-  .scroll-animate.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* --- Home Section --- */
-  #home {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 100px 0;
-  }
-  .home-text { flex: 1 1 500px; padding-right: 20px; }
-  .subtitle { font-size: 1.25rem; color: #a0c4ff; margin-bottom: 20px; }
-  .home-image { flex: 0 0 250px; text-align: center; margin-top: 20px; }
-  .home-image img {
-    width: 250px; height: 250px;
-    object-fit: cover; border-radius: 20px;
-    border: 3px solid #fff;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-  }
-  .home-image img:hover { transform: scale(1.05); }
-
-  /* --- Projects Section --- */
-  #projects { padding: 80px 0; }
-  .projects-section h2 { text-align: center; margin-bottom: 50px; }
-  .project-card {
-    background: rgba(255,255,255,0.05);
-    padding: 20px; margin-bottom: 50px;
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-  }
-  .project-card:hover { transform: translateY(-5px); box-shadow: 0 15px 25px rgba(0,0,0,0.3); }
-  .project-img { border-radius: 8px; margin-bottom: 15px; }
-  .project-card ul { list-style: disc; padding-left: 20px; display: inline-block; text-align: left; margin-bottom: 15px; }
-  .project-buttons { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:10px; }
-
-  /* --- Certificates Section --- */
-  #certificates { padding: 80px 0; }
-  .certificate-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-  .certificate {
-    background: rgba(255,255,255,0.05);
-    border-radius: 15px;
-    padding: 10px 15px;
-    display: flex; align-items: center;
-    min-width: 280px; max-width: 450px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .certificate:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
-  .certificate img { width: 50px; margin-right: 15px; }
-  .certificate span { color: #fff; font-size: 0.95rem; }
-
-  /* --- Contact Section --- */
-  #contact { padding: 80px 0; text-align: center; }
-  #contact h2 { margin-bottom: 30px; }
-  #contact p { margin-bottom: 10px; }
-
-  /* --- Responsive --- */
-  @media (max-width: 900px) {
-    #home { flex-direction: column-reverse; text-align: center; }
-    .home-text { padding-right: 0; }
-    .home-image { margin-top: 40px; }
-  }
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <a href="#home" class="nav-link active">Home</a>
-  <a href="#projects" class="nav-link">Projects</a>
-  <a href="#certificates" class="nav-link">Certificates</a>
-  <a href="#contact" class="nav-link">Contact</a>
-</nav>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Sanelise Matanzima</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
-<!-- HOME -->
-<section id="home" class="container scroll-animate">
-  <div class="home-text">
-    <h1>Sanelise Matanzima</h1>
-    <h2 class="subtitle">IT Support Specialist | Psychology Graduate | Emerging AI Innovator</h2>
-    <p>I am a versatile problem-solver with a foundation in psychology and hands-on experience in IT support and AI/ML development. My passion lies in combining behavioral insight with cutting-edge technology to design practical, ethical, and human-centered solutions.</p>
-    <p>With resilience and adaptability, I tackle complex challenges and deliver value-driven outcomes in education, employment, and beyond. My goal is to apply interdisciplinary thinking to build inclusive, ethical, and impactful AI solutions.</p>
-  </div>
-  <div class="home-image">
-    <img src="path/to/profile-photo.png" alt="Sanelise Matanzima">
-  </div>
-</section>
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <h1 class="fade-in">Sanelise Matanzima</h1>
+                <p class="subtitle fade-in">IT Support Specialist | Psychology Graduate | Emerging AI Innovator</p>
+                <p class="description fade-in">A dynamic psychology graduate passionate about <strong>bridging human understanding</strong> with <strong>emerging technologies</strong>. Dedicated to building <strong>ethical, human-centered solutions</strong> through intelligent design.</p>
+                <div class="hero-buttons fade-in">
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                    <a href="#about" class="btn btn-secondary">Learn More About Me</a>
+                </div>
+                <div class="hero-cards fade-in">
+                    <a href="SmartResume.pdf" download class="hero-card">
+                        <i class="fas fa-file-arrow-down"></i>
+                        <div>
+                            <h4>Professional Resume</h4>
+                            <p>Download my comprehensive CV</p>
+                        </div>
+                    </a>
+                    <a href="#contact" class="hero-card">
+                        <i class="fas fa-comments"></i>
+                        <div>
+                            <h4>Let's Connect</h4>
+                            <p>Ready to discuss opportunities</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">Scroll to explore <i class="fas fa-arrow-down"></i></a>
+        </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="projects-section container scroll-animate">
-  <h2>Projects</h2>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <p>Combining psychology insights with technical skills to create meaningful solutions</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text animate-on-scroll">
+                        <h3>From Psychology to AI/ML</h3>
+                        <p>I am a versatile problem-solver with a foundation in psychology and hands-on experience in IT support and AI/ML development. My passion lies in combining behavioral insight with cutting-edge technology to design practical, ethical, and human-centered solutions.</p>
+                        <p>With resilience and adaptability, I tackle complex challenges and deliver value-driven outcomes in education, employment, and beyond. My goal is to apply interdisciplinary thinking to build inclusive, ethical, and impactful AI solutions.</p>
+                        <h4>Career Objective</h4>
+                        <p>Seeking opportunities in AI, data analytics, or intelligent system development, particularly in career development, education, or health tech.</p>
+                    </div>
+                    <div class="about-stats animate-on-scroll">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="5">0</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="3">0</h3>
+                            <p>Live Applications</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="2">0</h3>
+                            <p>AI Chatbots</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="1">0</h3>
+                            <p>UX/UI Prototype</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="approach">
+                    <h3>My Approach</h3>
+                    <div class="approach-cards">
+                        <div class="approach-card animate-on-scroll">
+                            <i class="fas fa-users"></i>
+                            <h4>Human-Centered Design</h4>
+                            <p>Using psychology principles to create intuitive and accessible solutions.</p>
+                        </div>
+                        <div class="approach-card animate-on-scroll">
+                             <i class="fas fa-code"></i>
+                            <h4>Technical Excellence</h4>
+                            <p>Building robust applications with modern tools and best practices.</p>
+                        </div>
+                        <div class="approach-card animate-on-scroll">
+                            <i class="fas fa-shield-halved"></i>
+                            <h4>Ethical AI</h4>
+                            <p>Committed to developing fair, transparent, and beneficial AI systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- IT Master Chatbot -->
-  <div class="project-card scroll-animate">
-    <img src="path/to/it-master-chatbot.png" alt="IT Master Chatbot" class="project-img" style="width:180px; height:100px; object-fit:cover;">
-    <h3>IT Master Chatbot</h3>
-    <p><strong>AI Learning Companion</strong></p>
-    <p>Simplifies complex AI concepts through conversational learning with custom learning paths and educational resources.</p>
-    <p><strong>Tech Stack:</strong> Botpress, NLP, Conversation Design</p>
-    <ul>
-      <li>Conversational AI learning</li>
-      <li>Custom learning paths</li>
-      <li>Educational resource connections</li>
-    </ul>
-    <div class="project-buttons">
-      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
-      <a href="#" class="btn" style="background:#10b981;">View Code</a>
-      <a href="#" class="btn" style="background:#f59e0b;">Live Demo</a>
-    </div>
-  </div>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured Projects</h2>
+                    <p>A collection of AI/ML projects showcasing practical applications and technical skills</p>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-content">
+                            <h4>IT Master Chatbot (Botpress)</h4>
+                            <h5>AI Learning Companion</h5>
+                            <p>A learning companion for AI beginners, simplifying complex concepts through conversational learning and connecting learners with resources.</p>
+                            <div class="tech-stack"><strong>Tech:</strong> Botpress, NLP, Conversation Design</div>
+                            <ul class="key-features">
+                                <li>Conversational AI learning</li>
+                                <li>Custom learning paths</li>
+                                <li>Resource connections</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">View Profile</a>
+                            <a href="#" target="_blank">View Code</a>
+                            <a href="#" target="_blank" class="btn-demo">Live Demo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-content">
+                            <h4>Career Canvas Smart Build</h4>
+                            <h5>Professional Document Platform</h5>
+                            <p>A web platform to help users create professional career documents efficiently, featuring modular templates and responsive design.</p>
+                            <div class="tech-stack"><strong>Tech:</strong> React, TypeScript, Tailwind CSS, Lovable AI</div>
+                            <ul class="key-features">
+                                <li>Modular templates</li>
+                                <li>Responsive design</li>
+                                <li>User-centric layout</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">View Profile</a>
+                            <a href="#" target="_blank">View Code</a>
+                            <a href="#" target="_blank" class="btn-demo">Live Demo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+        
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Technical Skills</h2>
+                    <p>A blend of technical expertise and human-centered design thinking</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skills-proficiencies animate-on-scroll">
+                        <h3>Technical Proficiencies</h3>
+                        <div class="skill-bar"><div class="skill-level" data-level="80%" style="width: 0;"><span>SQL</span><span>80%</span></div></div>
+                        <div class="skill-bar"><div class="skill-level" data-level="85%" style="width: 0;"><span>Git</span><span>85%</span></div></div>
+                        <div class="skill-bar"><div class="skill-level" data-level="75%" style="width: 0;"><span>Python</span><span>75%</span></div></div>
+                        <div class="skill-bar"><div class="skill-level" data-level="90%" style="width: 0;"><span>OpenAI API</span><span>90%</span></div></div>
+                        <div class="skill-bar"><div class="skill-level" data-level="85%" style="width: 0;"><span>Supabase</span><span>85%</span></div></div>
+                        <div class="skill-bar"><div class="skill-level" data-level="95%" style="width: 0;"><span>Flowise AI</span><span>95%</span></div></div>
+                        <div class="skill-bar"><div class="skill-level" data-level="90%" style="width: 0;"><span>Botpress</span><span>90%</span></div></div>
+                        <div class="skill-bar"><div class="skill-level" data-level="80%" style="width: 0;"><span>Figma</span><span>80%</span></div></div>
+                    </div>
+                    <div class="skills-core animate-on-scroll">
+                        <h3>Core Competencies</h3>
+                        <div class="core-tags">
+                            <span>Problem-solving</span><span>Collaboration</span><span>Communication</span><span>Presentation</span><span>Critical Thinking</span><span>Adaptability</span>
+                        </div>
+                        <div class="psychology-foundation">
+                            <h4>Psychology Foundation</h4>
+                            <p>My psychology background provides unique insights into user behavior, cognitive processes, and ethical considerations in AI development.</p>
+                            <div class="core-tags">
+                                <span>Human-Computer Interaction</span><span>Ethical AI</span><span>User Research</span><span>Behavioral Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="certificates" id="certificates">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Professional Certificates</h2>
+                    <p>Continuous learning in AI, technology, and communication</p>
+                </div>
+                <div class="certificate-summary">
+                    <div class="summary-item"><h3>13</h3><p>Total Certificates</p></div>
+                    <div class="summary-item"><h3>8</h3><p>AI & ML Focus</p></div>
+                    <div class="summary-item"><h3>4</h3><p>Skill Areas</p></div>
+                </div>
+                <div class="certificate-grid">
+                    <div class="certificate-card animate-on-scroll">
+                        <span class="cert-category">AI/ML</span>
+                        <h5>Introduction to Artificial Intelligence (AI)</h5>
+                        <p>Coursera, 2024</p>
+                        <a href="#" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="certificate-card animate-on-scroll">
+                        <span class="cert-category">Professional Development</span>
+                        <h5>Developing Interpersonal Skills</h5>
+                        <p>Coursera, 2024</p>
+                        <a href="#" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Career Canvas Smart Build -->
-  <div class="project-card scroll-animate">
-    <img src="path/to/career-canvas.png" alt="Career Canvas Smart Build" class="project-img" style="width:180px; height:100px; object-fit:cover;">
-    <h3>Career Canvas Smart Build</h3>
-    <p><strong>Professional Document Platform</strong></p>
-    <p>Web platform to create professional career documents with modular templates, responsive design, and visual consistency.</p>
-    <p><strong>Tech Stack:</strong> React, TypeScript, Tailwind CSS, Lovable AI</p>
-    <ul>
-      <li>Modular customizable templates</li>
-      <li>Responsive cross-device design</li>
-      <li>User-centric intuitive layout</li>
-    </ul>
-    <div class="project-buttons">
-      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
-      <a href="#" class="btn" style="background:#10b981;">View Code</a>
-      <a href="#" class="btn" style="background:#f59e0b;">Live Demo</a>
-    </div>
-  </div>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                    <p>Let's connect and explore opportunities to collaborate</p>
+                </div>
+                <div class="contact-grid">
+                    <a href="mailto:sanelisematanzima@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>sanelisematanzima@gmail.com</p>
+                    </a>
+                    <a href="#" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h4>LinkedIn</h4>
+                        <p>Professional Network</p>
+                    </a>
+                    <a href="#" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h4>GitHub</h4>
+                        <p>Source Code & Projects</p>
+                    </a>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>South Africa (Remote Open)</p>
+                    </div>
+                </div>
+                <div class="final-cta">
+                    <h3>Let's Build Something Amazing</h3>
+                    <p>I'm passionate about creating ethical AI solutions that make a real difference. If you have a project in mind or want to collaborate, I'd love to hear from you.</p>
+                    <a href="mailto:sanelisematanzima@gmail.com" class="btn btn-primary">Start a Conversation</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!-- CreatiVerseAI -->
-  <div class="project-card scroll-animate">
-    <img src="path/to/creativerseai.png" alt="CreatiVerseAI" class="project-img" style="width:180px; height:100px; object-fit:cover;">
-    <h3>CreatiVerseAI</h3>
-    <p><strong>Creative Writing Content Generator</strong></p>
-    <p>AI-driven tool to generate high-quality poems, stories, and prompts across multiple styles, tones, and genres.</p>
-    <p><strong>Tech Stack:</strong> Groq API, LLaMA 3.3, Python, Streamlit</p>
-    <ul>
-      <li>Multi-genre content generation</li>
-      <li>Fast inference optimization</li>
-      <li>LLaMA 3.3 integration</li>
-    </ul>
-    <div class="project-buttons">
-      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
-      <a href="#" class="btn" style="background:#f59e0b;">Live Demo</a>
-    </div>
-  </div>
+    <footer class="footer">
+        <div class="container">
+            <h4>Sanelise Matanzima</h4>
+            <p>Psychology Graduate & Emerging AI Innovator</p>
+            <p class="copyright">Building ethical, human-centered AI solutions • © 2025</p>
+        </div>
+    </footer>
 
-  <!-- Fairness Audit Wizard -->
-  <div class="project-card scroll-animate">
-    <img src="path/to/fairness-audit.png" alt="Fairness Audit Wizard" class="project-img" style="width:180px; height:100px; object-fit:cover;">
-    <h3>Fairness Audit Wizard</h3>
-    <p><strong>AI Fairness Analysis Tool</strong></p>
-    <p>Analytical tool to assess and visualize bias in ML models using ROUGE metrics with interactive dashboards.</p>
-    <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Plotly</p>
-    <ul>
-      <li>Automated fairness audits</li>
-      <li>Visual evaluation dashboards</li>
-      <li>Bias mitigation insights</li>
-    </ul>
-    <div class="project-buttons">
-      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
-      <a href="#" class="btn" style="background:#10b981;">View Code</a>
-      <a href="#" class="btn" style="background:#f59e0b;">Live Demo</a>
-    </div>
-  </div>
-
-  <!-- Machine Daily Check Prototype -->
-  <div class="project-card scroll-animate">
-    <img src="path/to/machine-daily-check.png" alt="Machine Daily Check" class="project-img" style="width:180px; height:100px; object-fit:cover;">
-    <h3>Machine Daily Check Prototype</h3>
-    <p><strong>UX/UI Prototype</strong></p>
-    <p>Mobile-friendly prototype to streamline machine maintenance checks in industrial settings.</p>
-    <p><strong>Tech Stack:</strong> Figma, UX Design, Prototyping</p>
-    <ul>
-      <li>Tablet-first interface</li>
-      <li>Intuitive form flow</li>
-      <li>Industrial workflow optimization</li>
-    </ul>
-    <div class="project-buttons">
-      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
-      <a href="#" class="btn" style="background:#f59e0b;">View Design</a>
-    </div>
-  </div>
-
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates" class="certificates container scroll-animate">
-  <h2>Professional Certificates</h2>
-  <div class="certificate-grid">
-    <div class="certificate scroll-animate">
-      <a href="https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a" target="_blank">
-        <img src="images/coursera-badge.png" alt="Introduction to AI">
-        <span>Introduction to Artificial Intelligence (AI)</span>
-      </a>
-    </div>
-    <div class="certificate scroll-animate">
-      <a href="https://coursera.org/share/424029d2939ebc71656afba735f93132" target="_blank">
-        <img src="images/coursera-badge.png" alt="Developing Interpersonal Skills">
-        <span>Developing Interpersonal Skills</span>
-      </a>
-    </div>
-    <!-- Add remaining certificates similarly -->
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="container scroll-animate">
-  <h2>Get In Touch</h2>
-  <p>Email: <a href="mailto:sanelisematanzima@gmail.com">sanelisematanzima@gmail.com</a></p>
-  <p>LinkedIn: <a href="#">Professional Network</a></p>
-  <p>GitHub: <a href="#">Source Code & Projects</a></p>
-  <p>Location: Currently based in South Africa | Open to remote opportunities</p>
-</section>
-
-<!-- Active Navbar & Scroll Animations -->
-<script>
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('nav a');
-  const scrollElements = document.querySelectorAll('.scroll-animate');
-
-  // Navbar active highlight & scroll animations
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100;
-      if (pageYOffset >= sectionTop) { current = section.getAttribute('id'); }
-    });
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) { link.classList.add('active'); }
-    });
-
-    scrollElements.forEach(el => {
-      const elementTop = el.getBoundingClientRect().top;
-      if (elementTop < window.innerHeight - 100) { el.classList.add('visible'); }
-    });
-  });
-  window.addEventListener('load', () => {
-    scrollElements.forEach(el => {
-      const elementTop = el.getBoundingClientRect().top;
-      if (elementTop < window.innerHeight - 100) { el.classList.add('visible'); }
-    });
-  });
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
