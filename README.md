@@ -34,23 +34,23 @@ This repository contains the personal portfolio of **Sanelise Matanzima**, a Psy
 Each project includes a **medium profile image** above details:
 
 1. **IT Master Chatbot (Botpress)** – AI Learning Companion  
-   - Image: `assets/it-master-chatbot.png.png`  
+   - Image: `images/it-master-chatbot.png`  
    - [Live Demo](https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json)
 
 2. **Career Canvas Smart Build** – Professional Document Platform  
-   - Image: `assets/career-canvas.png.png`  
+   - Image: `images/career-canvas.png`  
    - [Live Demo](https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8)
 
 3. **CreatiVerseAI** – Creative Writing Tool  
-   - Image: `assets/creativerseai.png.png.png`  
+   - Image: `images/creativerseai.png`  
    - [Live Demo](https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299)
 
 4. **Fairness Audit Wizard** – AI Fairness Analysis Tool  
-   - Image: `assets/fairness-audit.png.png.png`  
+   - Image: `images/fairness-audit.png`  
    - [Live Demo](https://lovable.dev/projects/64f0b266-2177-4e9a-a88d-168e551e5d8a)
 
 5. **Machine Daily Check Prototype** – UX/UI Tablet Interface  
-   - Image: `assets/machine-daily-check.png.png.png`  
+   - Image: `images/machine-daily-check.png`  
    - [View Design](https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3)
 
 ---
@@ -68,7 +68,7 @@ Each project includes a **medium profile image** above details:
 ---
 
 ### Professional Certificates
-Displayed in column format with **badge images**:
+Displayed in column format with **images/coursera-badge.png**:
 
 - [Introduction to Artificial Intelligence (AI)](https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a)
 - [Developing Interpersonal Skills](https://coursera.org/share/424029d2939ebc71656afba735f93132)
