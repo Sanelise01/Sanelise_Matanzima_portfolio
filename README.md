@@ -1,80 +1,85 @@
-# Sanelise Matanzima Portfolio
+# Sanelise Matanzima | AI Portfolio
 
-Welcome to the official repository of my professional portfolio! This portfolio showcases my skills, projects, and achievements as a **Psychology Graduate, IT Support Specialist, and Emerging AI Innovator**.
-
-[Live Portfolio](https://sanelise01.github.io/Sanelise_Matanzima_portfolio/)
+Welcome to the personal portfolio of **Sanelise Matanzima**, a Psychology Graduate and Emerging AI Innovator. This portfolio showcases professional projects, technical skills, certificates, and contact information in a modern, responsive design.
 
 ---
 
-## About Me
+## 🌐 Live Demo
 
-I am a versatile problem-solver with a foundation in **psychology** and hands-on experience in **IT support and AI/ML development**. My passion lies in combining behavioral insight with cutting-edge technology to design **practical, ethical, and human-centered solutions**.
-
-With resilience and adaptability, I tackle complex challenges and deliver value-driven outcomes in education, employment, and beyond. My goal is to apply interdisciplinary thinking to build **inclusive, ethical, and impactful AI solutions**.
+[View Portfolio Online](https://sanelise01.github.io/Sanelise_Matanzima_portfolio/)
 
 ---
 
-## Career Objective
+## 🎨 Design Overview
 
-Seeking opportunity that will allow me to grow professionally while making a **positive impact** on the company.
+The portfolio features:
 
----
-
-## My Approach
-
-- **Human-Centered Design:** Using psychology principles to create intuitive and accessible solutions  
-- **Technical Excellence:** Building robust applications with modern tools and best practices  
-- **Ethical AI:** Committed to developing fair, transparent, and beneficial AI systems
-
----
-
-## Portfolio Sections
-
-### 1. Home
-- Introduction with profile photo
-- Career overview and CTA buttons
-
-### 2. About
-- Personal background
-- Career objective
-- Human-centered and ethical AI approach
-
-### 3. Projects
-- **IT Master Chatbot (Botpress)**
-- **Career Canvas Smart Build**
-- **CreatiVerseAI**
-- **Fairness Audit Wizard**
-- **Machine Daily Check Prototype**
-
-### 4. Skills
-- SQL, Git, Python, OpenAI API, Supabase, Flowise AI, Botpress, Figma
-- Core competencies: Problem-solving, Collaboration, Communication, Adaptability
-
-### 5. Certificates
-- 13 Coursera certificates in AI/ML, Programming, and Communication
-- All badges displayed with clickable links
-
-### 6. Contact
-- Email: [sanelisematanzima@gmail.com](mailto:sanelisematanzima@gmail.com)
-- LinkedIn: [Professional Network](https://linkedin.com)
-- GitHub: [Source Code & Projects](https://github.com/sanelise01)
-- Location: South Africa | Open to remote opportunities
+- Modern gradient backgrounds (blues/purples) to convey tech expertise
+- Smooth animations and hover effects
+- Clean typography hierarchy
+- Professional color palette
+- Mobile-first responsive design
+- User-friendly navigation with scroll animations
 
 ---
 
-## Tech Stack
+## 🖥️ Features
 
-- **Frontend:** HTML5, CSS3
-- **Design:** Figma
-- **Backend & AI:** Python, Botpress, OpenAI API, Flowise AI
-- **Version Control:** Git
-- **Hosting:** GitHub Pages
+1. **Home / Hero Section**
+   - Introduction with a medium-sized profile image
+   - Professional summary and CTA buttons
+   - Resume download and quick contact card
+
+2. **About Me Section**
+   - Career objective and approach
+   - Statistics counter: projects, live applications, AI chatbots, UX/UI prototypes
+   - Approach cards: Human-Centered Design, Technical Excellence, Ethical AI
+
+3. **Featured Projects**
+   - **IT Master Chatbot (Botpress)** – AI learning companion
+     - [Live Demo](https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json)
+   - **Career Canvas Smart Build** – Professional document platform
+     - [Live Demo](https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8)
+   - **CreatiVerseAI** – Creative writing tool
+     - [Live Demo](https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299)
+   - **Fairness Audit Wizard** – AI fairness analysis
+     - [Live Demo](https://lovable.dev/projects/64f0b266-2177-4e9a-a88d-168e551e5d8a)
+   - **Machine Daily Check Prototype** – UX/UI tablet interface
+     - [View Design](https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3)
+
+4. **Technical Skills**
+   - **AI/ML / OpenAI API** – 90%
+   - **Backend / Supabase** – 85%
+   - **No-Code AI / Flowise AI** – 95%
+   - **Chatbot / Botpress** – 90%
+   - **Design / Figma** – 80%
+   - Core competencies: Problem-solving, Collaboration, Communication, Presentation, Critical Thinking, Adaptability
+
+5. **Certificates**
+   - All certificates with Coursera badge images and clickable links
+   - Examples:
+     - Introduction to Artificial Intelligence (AI)
+     - Developing Interpersonal Skills
+     - AI Foundations: Prompt Engineering with ChatGPT
+     - Generative AI with Large Language Models
+     - Python for Data Science, AI & Development
+
+6. **Contact Section**
+   - Email, LinkedIn, GitHub, and location
+   - CTA button for direct email communication
 
 ---
 
-## How to Use
+## 🛠️ Technologies Used
 
-1. Clone the repository:
-```bash
-git clone https://github.com/sanelise01/Sanelise_Matanzima_portfolio.git
+- **HTML5, CSS3, JavaScript**
+- **Font Awesome** for icons
+- **Google Fonts (Inter)**
+- **Figma** for project design prototypes
+- Responsive design with **flexbox** and **grid**
+
+---
+
+## 📁 Project Structure
+
 
