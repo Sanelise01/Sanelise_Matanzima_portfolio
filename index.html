@@ -16,6 +16,28 @@
   }
   a { text-decoration: none; color: inherit; }
 
+  /* --- Navbar --- */
+  nav {
+    position: sticky;
+    top: 0;
+    background: rgba(30, 60, 114, 0.95);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  nav a {
+    color: #f0f0f5;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+  }
+  nav a:hover { background: #4f46e5; color: #fff; }
+  nav a.active { background: #a0c4ff; color: #1e3c72; font-weight: 700; }
+
   /* --- Typography --- */
   h1 { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
   h2 { font-size: 2rem; font-weight: 600; margin-bottom: 20px; color: #a0c4ff; }
@@ -32,10 +54,21 @@
     font-weight: 500;
     transition: all 0.3s ease;
   }
-  .btn:hover { transform: translateY(-3px); background: #3730a3; }
+  .btn:hover { transform: translateY(-3px) scale(1.05); }
 
   /* --- Container --- */
   .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+
+  /* --- Scroll Animation --- */
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   /* --- Home Section --- */
   #home {
@@ -44,7 +77,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 100px 0;
-    animation: fadeIn 1.2s ease;
   }
   .home-text { flex: 1 1 500px; padding-right: 20px; }
   .subtitle { font-size: 1.25rem; color: #a0c4ff; margin-bottom: 20px; }
@@ -60,7 +92,7 @@
 
   /* --- Projects Section --- */
   #projects { padding: 80px 0; }
-  .projects-section h2 { text-align: center; color: #a0c4ff; margin-bottom: 50px; }
+  .projects-section h2 { text-align: center; margin-bottom: 50px; }
   .project-card {
     background: rgba(255,255,255,0.05);
     padding: 20px; margin-bottom: 50px;
@@ -70,13 +102,12 @@
     text-align: center;
   }
   .project-card:hover { transform: translateY(-5px); box-shadow: 0 15px 25px rgba(0,0,0,0.3); }
-  .project-img { width: 200px; height: auto; border-radius: 10px; margin-bottom: 15px; }
+  .project-img { border-radius: 8px; margin-bottom: 15px; }
   .project-card ul { list-style: disc; padding-left: 20px; display: inline-block; text-align: left; margin-bottom: 15px; }
-  .project-buttons .btn { margin: 5px; }
+  .project-buttons { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:10px; }
 
   /* --- Certificates Section --- */
   #certificates { padding: 80px 0; }
-  .certificates h2 { text-align: center; color: #a0c4ff; margin-bottom: 50px; }
   .certificate-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
   .certificate {
     background: rgba(255,255,255,0.05);
@@ -92,11 +123,8 @@
 
   /* --- Contact Section --- */
   #contact { padding: 80px 0; text-align: center; }
-  #contact h2 { color: #a0c4ff; margin-bottom: 30px; }
+  #contact h2 { margin-bottom: 30px; }
   #contact p { margin-bottom: 10px; }
-
-  /* --- Animations --- */
-  @keyframes fadeIn { 0% { opacity:0; transform: translateY(20px);} 100% { opacity:1; transform: translateY(0);} }
 
   /* --- Responsive --- */
   @media (max-width: 900px) {
@@ -108,18 +136,21 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav>
+  <a href="#home" class="nav-link active">Home</a>
+  <a href="#projects" class="nav-link">Projects</a>
+  <a href="#certificates" class="nav-link">Certificates</a>
+  <a href="#contact" class="nav-link">Contact</a>
+</nav>
+
 <!-- HOME -->
-<section id="home" class="container">
+<section id="home" class="container scroll-animate">
   <div class="home-text">
     <h1>Sanelise Matanzima</h1>
     <h2 class="subtitle">IT Support Specialist | Psychology Graduate | Emerging AI Innovator</h2>
     <p>I am a versatile problem-solver with a foundation in psychology and hands-on experience in IT support and AI/ML development. My passion lies in combining behavioral insight with cutting-edge technology to design practical, ethical, and human-centered solutions.</p>
     <p>With resilience and adaptability, I tackle complex challenges and deliver value-driven outcomes in education, employment, and beyond. My goal is to apply interdisciplinary thinking to build inclusive, ethical, and impactful AI solutions.</p>
-    <div class="home-buttons">
-      <a href="#projects" class="btn">Projects</a>
-      <a href="#certificates" class="btn">Certificates</a>
-      <a href="path/to/resume.pdf" class="btn" target="_blank">Resume</a>
-    </div>
   </div>
   <div class="home-image">
     <img src="path/to/profile-photo.png" alt="Sanelise Matanzima">
@@ -127,15 +158,15 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="projects-section container">
+<section id="projects" class="projects-section container scroll-animate">
   <h2>Projects</h2>
 
   <!-- IT Master Chatbot -->
-  <div class="project-card">
-    <img src="path/to/it-master-chatbot.png" alt="IT Master Chatbot" class="project-img">
+  <div class="project-card scroll-animate">
+    <img src="path/to/it-master-chatbot.png" alt="IT Master Chatbot" class="project-img" style="width:180px; height:100px; object-fit:cover;">
     <h3>IT Master Chatbot</h3>
     <p><strong>AI Learning Companion</strong></p>
-    <p>A learning companion built for AI beginners. Simplifies complex AI concepts through conversational learning. Supports follow-up questions, custom learning paths, and educational resources.</p>
+    <p>Simplifies complex AI concepts through conversational learning with custom learning paths and educational resources.</p>
     <p><strong>Tech Stack:</strong> Botpress, NLP, Conversation Design</p>
     <ul>
       <li>Conversational AI learning</li>
@@ -143,44 +174,147 @@
       <li>Educational resource connections</li>
     </ul>
     <div class="project-buttons">
-      <a href="#" class="btn">View Profile</a>
-      <a href="#" class="btn">View Code</a>
-      <a href="#" class="btn">Live Demo</a>
+      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
+      <a href="#" class="btn" style="background:#10b981;">View Code</a>
+      <a href="#" class="btn" style="background:#f59e0b;">Live Demo</a>
     </div>
   </div>
 
-  <!-- Add remaining projects similarly -->
+  <!-- Career Canvas Smart Build -->
+  <div class="project-card scroll-animate">
+    <img src="path/to/career-canvas.png" alt="Career Canvas Smart Build" class="project-img" style="width:180px; height:100px; object-fit:cover;">
+    <h3>Career Canvas Smart Build</h3>
+    <p><strong>Professional Document Platform</strong></p>
+    <p>Web platform to create professional career documents with modular templates, responsive design, and visual consistency.</p>
+    <p><strong>Tech Stack:</strong> React, TypeScript, Tailwind CSS, Lovable AI</p>
+    <ul>
+      <li>Modular customizable templates</li>
+      <li>Responsive cross-device design</li>
+      <li>User-centric intuitive layout</li>
+    </ul>
+    <div class="project-buttons">
+      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
+      <a href="#" class="btn" style="background:#10b981;">View Code</a>
+      <a href="#" class="btn" style="background:#f59e0b;">Live Demo</a>
+    </div>
+  </div>
+
+  <!-- CreatiVerseAI -->
+  <div class="project-card scroll-animate">
+    <img src="path/to/creativerseai.png" alt="CreatiVerseAI" class="project-img" style="width:180px; height:100px; object-fit:cover;">
+    <h3>CreatiVerseAI</h3>
+    <p><strong>Creative Writing Content Generator</strong></p>
+    <p>AI-driven tool to generate high-quality poems, stories, and prompts across multiple styles, tones, and genres.</p>
+    <p><strong>Tech Stack:</strong> Groq API, LLaMA 3.3, Python, Streamlit</p>
+    <ul>
+      <li>Multi-genre content generation</li>
+      <li>Fast inference optimization</li>
+      <li>LLaMA 3.3 integration</li>
+    </ul>
+    <div class="project-buttons">
+      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
+      <a href="#" class="btn" style="background:#f59e0b;">Live Demo</a>
+    </div>
+  </div>
+
+  <!-- Fairness Audit Wizard -->
+  <div class="project-card scroll-animate">
+    <img src="path/to/fairness-audit.png" alt="Fairness Audit Wizard" class="project-img" style="width:180px; height:100px; object-fit:cover;">
+    <h3>Fairness Audit Wizard</h3>
+    <p><strong>AI Fairness Analysis Tool</strong></p>
+    <p>Analytical tool to assess and visualize bias in ML models using ROUGE metrics with interactive dashboards.</p>
+    <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Plotly</p>
+    <ul>
+      <li>Automated fairness audits</li>
+      <li>Visual evaluation dashboards</li>
+      <li>Bias mitigation insights</li>
+    </ul>
+    <div class="project-buttons">
+      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
+      <a href="#" class="btn" style="background:#10b981;">View Code</a>
+      <a href="#" class="btn" style="background:#f59e0b;">Live Demo</a>
+    </div>
+  </div>
+
+  <!-- Machine Daily Check Prototype -->
+  <div class="project-card scroll-animate">
+    <img src="path/to/machine-daily-check.png" alt="Machine Daily Check" class="project-img" style="width:180px; height:100px; object-fit:cover;">
+    <h3>Machine Daily Check Prototype</h3>
+    <p><strong>UX/UI Prototype</strong></p>
+    <p>Mobile-friendly prototype to streamline machine maintenance checks in industrial settings.</p>
+    <p><strong>Tech Stack:</strong> Figma, UX Design, Prototyping</p>
+    <ul>
+      <li>Tablet-first interface</li>
+      <li>Intuitive form flow</li>
+      <li>Industrial workflow optimization</li>
+    </ul>
+    <div class="project-buttons">
+      <a href="#" class="btn" style="background:#4f46e5;">View Profile</a>
+      <a href="#" class="btn" style="background:#f59e0b;">View Design</a>
+    </div>
+  </div>
 
 </section>
 
 <!-- CERTIFICATES -->
-<section id="certificates" class="certificates container">
+<section id="certificates" class="certificates container scroll-animate">
   <h2>Professional Certificates</h2>
   <div class="certificate-grid">
-    <div class="certificate">
+    <div class="certificate scroll-animate">
       <a href="https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a" target="_blank">
         <img src="images/coursera-badge.png" alt="Introduction to AI">
         <span>Introduction to Artificial Intelligence (AI)</span>
       </a>
     </div>
-    <div class="certificate">
+    <div class="certificate scroll-animate">
       <a href="https://coursera.org/share/424029d2939ebc71656afba735f93132" target="_blank">
         <img src="images/coursera-badge.png" alt="Developing Interpersonal Skills">
         <span>Developing Interpersonal Skills</span>
       </a>
     </div>
-    <!-- Add remaining certificates -->
+    <!-- Add remaining certificates similarly -->
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="container">
+<section id="contact" class="container scroll-animate">
   <h2>Get In Touch</h2>
   <p>Email: <a href="mailto:sanelisematanzima@gmail.com">sanelisematanzima@gmail.com</a></p>
   <p>LinkedIn: <a href="#">Professional Network</a></p>
   <p>GitHub: <a href="#">Source Code & Projects</a></p>
   <p>Location: Currently based in South Africa | Open to remote opportunities</p>
 </section>
+
+<!-- Active Navbar & Scroll Animations -->
+<script>
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
+  const scrollElements = document.querySelectorAll('.scroll-animate');
+
+  // Navbar active highlight & scroll animations
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) { current = section.getAttribute('id'); }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) { link.classList.add('active'); }
+    });
+
+    scrollElements.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+      if (elementTop < window.innerHeight - 100) { el.classList.add('visible'); }
+    });
+  });
+  window.addEventListener('load', () => {
+    scrollElements.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+      if (elementTop < window.innerHeight - 100) { el.classList.add('visible'); }
+    });
+  });
+</script>
 
 </body>
 </html>
