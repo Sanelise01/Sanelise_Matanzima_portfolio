@@ -47,7 +47,7 @@ Each project includes a **medium profile image** above details:
 
 4. **Fairness Audit Wizard** – AI Fairness Analysis Tool  
    - Image: `images/fairness-audit.png`  
-   - [Live Demo](https://lovable.dev/projects/64f0b266-2177-4e9a-a88d-168e551e5d8a)
+   - [Live Demo](https://lovable.dev/projects/58f62fa0-cadc-42b7-9d05-3732e176e4ab)
 
 5. **Machine Daily Check Prototype** – UX/UI Tablet Interface  
    - Image: `images/machine-daily-check.png`  
