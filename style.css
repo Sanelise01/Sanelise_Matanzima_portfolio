@@ -387,62 +387,41 @@ body {
 /* ==========================
    CERTIFICATES
 ========================== */
-<style>
-  /* ...other styles remain unchanged... */
+ /* ...other styles remain unchanged... */
 
-  /* Profile image overlay on certificate - medium size */
+  /* Profile image overlay on certificate - medium size, floating with shadow */
   .profile-badge {
     width: 100px;       /* medium size */
     height: 100px;      /* medium size */
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    top: 10px;
+    top: 120px;         /* half overlaps certificate image */
     left: 50%;
     transform: translateX(-50%);
     border: 3px solid #ffd700;
     background-color: #fff;
+    z-index: 2;         /* ensures it sits above certificate image */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover .profile-badge {
+    transform: translateX(-50%) translateY(-5px); /* moves slightly on hover */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6); /* enhanced shadow on hover */
+  }
+
+  .project-photo {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
   }
 
   .project-content {
-    padding: 4rem 1rem 1rem 1rem; /* more top padding for medium badge */
+    padding: 3rem 1rem 1rem 1rem; /* adjust top padding for floating badge */
     text-align: center;
-  }
-</style>
-
-  /* Profile image on top of the certificate card */
-  .certificate-profile {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 3px solid #ffd700;
-    background-color: #fff;
-  }
-
-  .certificate-content {
-    padding: 3rem 1rem 1rem 1rem; /* top padding to account for profile image */
-    text-align: center;
-  }
-
-  .certificate-content h4 {
-    font-size: 1.5rem;
-    margin-bottom: 0.3rem;
-    color: #ffd700;
-  }
-
-  .certificate-content h5 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .certificate-content p {
-    margin: 3px 0;
-    color: #ccc;
+    position: relative;
+    z-index: 1; /* content sits below badge */
   }
 </style>
 </head>
