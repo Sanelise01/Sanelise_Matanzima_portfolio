@@ -70,9 +70,8 @@ Each project includes a **medium profile image** above details:
 ### Professional Certificates
 Displayed in column format:
 
-## Professional Certificates
-
 ### Bachelor of Arts Degree — Nelson Mandela University
+![NMU Certificate Preview](NMU.PNG)
 **Institution:** Nelson Mandela University  
 **Year:** 2020–2023  
 [View Full Certificate](BA_certificate.pdf)
@@ -80,6 +79,7 @@ Displayed in column format:
 ---
 
 ### National Senior Certificate — Sophakama High School
+![Matric Certificate Preview](Education.PNG)
 **Institution:** Sophakama High School  
 **Year:** 2019  
 [View Full Certificate](Sanelise_Matric_Certificate.pdf)
@@ -87,18 +87,24 @@ Displayed in column format:
 ---
 
 ### TEFL Certificate — Teacher Record
+![TEFL Certificate Preview](Teacher-Record.PNG)
 **Program:** Teaching English as a Foreign Language  
 **Issued by:** Teacher Record  
 [View Full Certificate](TEFL_certificate_Sanelise_Matanzima.pdf)
 
+---
+
+### IT Support Professional Certificate — Coursera
+![IT Support Certificate Preview](IT-SUPPORT.PNG)
+**Platform:** Coursera  
+**Year:** 2024  
 
 ---
 
-### 💻 IT Support Certificate — Coursera
-<img src="https://github.com/YourUsername/YourRepoName/blob/main/IT-SUPPORT.PNG" width="400" alt="IT Support Certificate Preview"/>
-
-- **Course:** IT Support Professional Certificate  
-- **Platform:** Coursera  
+### Professional Development Certificate — Coursera
+![Professional Development Certificate Preview](Professional%20Development.PNG)
+**Platform:** Coursera  
+**Year:** 2024  
   
 
 ---
