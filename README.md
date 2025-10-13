@@ -70,39 +70,44 @@ Each project includes a **medium profile image** above details:
 ### Professional Certificates
 Displayed in column format:
 
-### Bachelor of Arts Degree — Nelson Mandela University
-![NMU Certificate Preview](NMU.PNG)
-**Institution:** Nelson Mandela University  
-**Year:** 2020–2023  
+### 1. Bachelor of Arts Degree — Nelson Mandela University
+![Profile Image](images/profile.png)
+- **Institution:** Nelson Mandela University  
+- **Year:** 2020–2023  
+- **Preview:** ![NMU Certificate Preview](images/nmu.png)  
 
 ---
 
-### National Senior Certificate — Sophakama High School
-![Matric Certificate Preview](Education.PNG)
-**Institution:** Sophakama High School  
-**Year:** 2019  
+### 2. National Senior Certificate — Sophakama High School
+![Profile Image](images/profile.png)
+- **Institution:** Sophakama High School  
+- **Year:** 2019  
+- **Preview:** ![Matric Certificate Preview](images/education.png)  
 
 ---
 
-### TEFL Certificate — Teacher Record
-![TEFL Certificate Preview](Teacher-Record.PNG)
-**Program:** Teaching English as a Foreign Language  
-**Issued by:** Teacher Record  
-[View Full Certificate](TEFL_certificate_Sanelise_Matanzima.pdf)
+### 3. TEFL Certificate — Teacher Record
+![Profile Image](images/profile.png)
+- **Program:** Teaching English as a Foreign Language  
+- **Issued by:** Teacher Record  
+- **Preview:** ![TEFL Certificate Preview](images/teacher-record.png)  
 
 ---
 
-### IT Support Professional Certificate — Coursera
-![IT Support Certificate Preview](IT-SUPPORT.PNG)
-**Platform:** Coursera  
-**Year:** 2024  
+### 4. IT Support Professional Certificate — Coursera
+![Profile Image](images/profile.png)
+- **Platform:** Coursera  
+- **Year:** 2025  
+- **Preview:** ![IT Support Certificate Preview](images/it-support.png)  
 
 ---
 
-### Professional Development Certificate — Coursera
-![Professional Development Certificate Preview](Professional%20Development.PNG)
-**Platform:** Coursera  
-**Year:** 2024  
+### 5. Professional Development Certificate — Coursera
+![Profile Image](images/profile.png)
+- **Platform:** Coursera  
+- **Year:** 2025  
+- **Preview:** ![Professional Development Certificate Preview](images/professional development.png)  
+
   
 
 ---
