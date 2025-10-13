@@ -70,30 +70,27 @@ Each project includes a **medium profile image** above details:
 ### Professional Certificates
 Displayed in column format:
 
-### 🎓 Bachelor of Arts Degree — Nelson Mandela University
-<img src="https://github.com/YourUsername/YourRepoName/blob/main/NMU.PNG" width="400" alt="NMU Certificate Preview"/>
+## Professional Certificates
 
-- **Institution:** Nelson Mandela University  
-- **Year:** 2020–2023  
-- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/BA_certificate.pdf)
-
----
-
-### 🏫 National Senior Certificate — Sophakama High School
-<img src="https://github.com/YourUsername/YourRepoName/blob/main/Education.PNG" width="400" alt="Matric Certificate Preview"/>
-
-- **Institution:** Sophakama High School  
-- **Year:** 2019  
-- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/Sanelise_Matric_Certificate.pdf)
+### Bachelor of Arts Degree — Nelson Mandela University
+**Institution:** Nelson Mandela University  
+**Year:** 2020–2023  
+[View Full Certificate](BA_certificate.pdf)
 
 ---
 
-### 🌍 TEFL Certificate — Teacher Record
-<img src="https://github.com/YourUsername/YourRepoName/blob/main/Teacher-Record.PNG" width="400" alt="TEFL Certificate Preview"/>
+### National Senior Certificate — Sophakama High School
+**Institution:** Sophakama High School  
+**Year:** 2019  
+[View Full Certificate](Sanelise_Matric_Certificate.pdf)
 
-- **Program:** Teaching English as a Foreign Language  
-- **Issued by:** Teacher Record  
-- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/TEFL_certificate_Sanelise_Matanzima.pdf)
+---
+
+### TEFL Certificate — Teacher Record
+**Program:** Teaching English as a Foreign Language  
+**Issued by:** Teacher Record  
+[View Full Certificate](TEFL_certificate_Sanelise_Matanzima.pdf)
+
 
 ---
 
