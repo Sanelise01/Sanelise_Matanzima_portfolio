@@ -387,60 +387,28 @@ body {
 /* ==========================
    CERTIFICATES
 ========================== */
-   font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
+<style>
+  /* ...other styles remain unchanged... */
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-
-  .section-title {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .section-title h2 {
-    font-size: 2rem;
-    color: #ffd700;
-    margin-bottom: 10px;
-  }
-
-  .section-title p {
-    font-size: 1rem;
-    color: #ccc;
-  }
-
-  /* Grid layout identical to projects */
-  .certificate-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-
-  .certificate-card {
-    background: rgba(255,255,255,0.1);
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
-
-  .certificate-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(255,255,255,0.3);
-  }
-
-  .certificate-photo {
-    width: 100%;
-    height: 200px;
+  /* Profile image overlay on certificate - medium size */
+  .profile-badge {
+    width: 100px;       /* medium size */
+    height: 100px;      /* medium size */
+    border-radius: 50%;
     object-fit: cover;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #ffd700;
+    background-color: #fff;
   }
+
+  .project-content {
+    padding: 4rem 1rem 1rem 1rem; /* more top padding for medium badge */
+    text-align: center;
+  }
+</style>
 
   /* Profile image on top of the certificate card */
   .certificate-profile {
