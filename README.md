@@ -102,7 +102,7 @@ Displayed in column format:
 
 - **Course:** IT Support Professional Certificate  
 - **Platform:** Coursera  
-- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/IT-SUPPORT.pdf)
+  
 
 ---
 
@@ -111,7 +111,6 @@ Displayed in column format:
 
 - **Course:** Professional Development Program  
 - **Platform:** Coursera  
-- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/Professional_Development.pdf)
 ---
 
 ### Contact Section
