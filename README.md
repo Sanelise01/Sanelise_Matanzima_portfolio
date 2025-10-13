@@ -74,7 +74,6 @@ Displayed in column format:
 ![NMU Certificate Preview](NMU.PNG)
 **Institution:** Nelson Mandela University  
 **Year:** 2020–2023  
-[View Full Certificate](BA_certificate.pdf)
 
 ---
 
@@ -82,7 +81,6 @@ Displayed in column format:
 ![Matric Certificate Preview](Education.PNG)
 **Institution:** Sophakama High School  
 **Year:** 2019  
-[View Full Certificate](Sanelise_Matric_Certificate.pdf)
 
 ---
 
