@@ -68,22 +68,50 @@ Each project includes a **medium profile image** above details:
 ---
 
 ### Professional Certificates
-Displayed in column format with **images/coursera-badge.png**:
+Displayed in column format:
 
-- [Introduction to Artificial Intelligence (AI)](https://coursera.org/share/116adc0ba58dd0b23cbba35205d9703a)
-- [Developing Interpersonal Skills](https://coursera.org/share/424029d2939ebc71656afba735f93132)
-- [Introduction to Generative AI](https://coursera.org/share/ad6a6eeb0e65dc8951dac04bfc5c843d)
-- [AI Foundations: Prompt Engineering with ChatGPT](https://coursera.org/share/a6281597ce5be7c5b209010f3d438359)
-- [Trustworthy Generative AI](https://coursera.org/share/b7435e8ddd655f498a54c1b8add9acc2)
-- [Introduction to Responsible AI](https://coursera.org/share/95692270160e080987fb809f50af1ccb)
-- [Generative AI with Large Language Models](https://coursera.org/share/e09e9aa4e64345fe45476080f85f0c8d)
-- [Python for Data Science, AI & Development](https://coursera.org/share/80055eff26270412a7a8a1dde4386257)
-- [Machine Learning Basics](https://coursera.org/share/daf2a212ac3aad787eb3da760e2b186a)
-- [AI Essentials](https://coursera.org/share/47fc67540ae6ac1a1cb411fbabc18ccd)
-- [Verbal Communications and Presentation Skills](https://coursera.org/share/5900153b977c237a5e53c4ff0b28a3de)
-- [Active Listening: Enhancing Communication Skills](https://coursera.org/share/b8c694effc59f58162b611d66527b510)
-- [Write Professional Emails in English](https://coursera.org/share/9de76ba1c95976acd8f09fc411e772f9)
+### 🎓 Bachelor of Arts Degree — Nelson Mandela University
+<img src="https://github.com/YourUsername/YourRepoName/blob/main/NMU.PNG" width="400" alt="NMU Certificate Preview"/>
 
+- **Institution:** Nelson Mandela University  
+- **Year:** 2020–2023  
+- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/BA_certificate.pdf)
+
+---
+
+### 🏫 National Senior Certificate — Sophakama High School
+<img src="https://github.com/YourUsername/YourRepoName/blob/main/Education.PNG" width="400" alt="Matric Certificate Preview"/>
+
+- **Institution:** Sophakama High School  
+- **Year:** 2019  
+- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/Sanelise_Matric_Certificate.pdf)
+
+---
+
+### 🌍 TEFL Certificate — Teacher Record
+<img src="https://github.com/YourUsername/YourRepoName/blob/main/Teacher-Record.PNG" width="400" alt="TEFL Certificate Preview"/>
+
+- **Program:** Teaching English as a Foreign Language  
+- **Issued by:** Teacher Record  
+- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/TEFL_certificate_Sanelise_Matanzima.pdf)
+
+---
+
+### 💻 IT Support Certificate — Coursera
+<img src="https://github.com/YourUsername/YourRepoName/blob/main/IT-SUPPORT.PNG" width="400" alt="IT Support Certificate Preview"/>
+
+- **Course:** IT Support Professional Certificate  
+- **Platform:** Coursera  
+- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/IT-SUPPORT.pdf)
+
+---
+
+### 🚀 Professional Development — Coursera
+<img src="https://github.com/YourUsername/YourRepoName/blob/main/Professional%20Development.PNG" width="400" alt="Professional Development Certificate Preview"/>
+
+- **Course:** Professional Development Program  
+- **Platform:** Coursera  
+- [📄 View Full Certificate](https://github.com/YourUsername/YourRepoName/blob/main/Professional_Development.pdf)
 ---
 
 ### Contact Section
