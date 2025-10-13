@@ -388,40 +388,33 @@ body {
    CERTIFICATES
 ========================== */
  /* ...other styles remain unchanged... */
-
-  /* Profile image overlay on certificate - medium size, floating with shadow */
-  .profile-badge {
-    width: 100px;       /* medium size */
-    height: 100px;      /* medium size */
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    top: 120px;         /* half overlaps certificate image */
-    left: 50%;
-    transform: translateX(-50%);
-    border: 3px solid #ffd700;
-    background-color: #fff;
-    z-index: 2;         /* ensures it sits above certificate image */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
   }
 
-  .project-card:hover .profile-badge {
-    transform: translateX(-50%) translateY(-5px); /* moves slightly on hover */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.6); /* enhanced shadow on hover */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
   }
 
-  .project-photo {
-    width: 100%;
-    object-fit: cover;
-    height: 200px;
-  }
-
-  .project-content {
-    padding: 3rem 1rem 1rem 1rem; /* adjust top padding for floating badge */
+  .section-title {
     text-align: center;
-    position: relative;
-    z-index: 1; /* content sits below badge */
+    margin-bottom: 50px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 10px;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+    color: #ccc;
   }
 </style>
 </head>
