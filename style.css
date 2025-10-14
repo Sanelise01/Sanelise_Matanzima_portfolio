@@ -388,25 +388,38 @@ body {
    CERTIFICATES
 ========================== */
 <style>
+.cert-section {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb, #38bdf8); /* modern blue gradient */
+  padding: 3rem 1.5rem;
+  border-radius: 16px;
+}
+
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
 }
 
 .cert-card {
   text-align: center;
-  padding: 0.8rem;
-  border-radius: 10px;
-  background: #1e40af; /* Blue background */
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  color: #fff; /* White text */
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08); /* subtle translucent overlay */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
 }
 
 .cert-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .cert-badge {
@@ -417,19 +430,65 @@ body {
 }
 
 .cert-card figcaption {
-  margin-top: 0.6rem;
-  font-size: 0.9rem;
-  color: #fff; /* White caption text */
-  line-height: 1.4;
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #fff;
+  line-height: 1.5;
 }
 
 .cert-card strong {
   display: block;
-  font-size: 0.95rem;
-  color: #fff; /* White bold text */
+  font-size: 1rem;
+  color: #ffd700; /* gold accent for titles */
   margin-bottom: 0.25rem;
 }
+
+.cert-section h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 </style>
+
+<section class="cert-section">
+  <h2>Professional Certificates</h2>
+  <div class="cert-grid">
+    <figure class="cert-card">
+      <img src="images/education.png" alt="Education Badge" class="cert-badge">
+      <figcaption>
+        <strong>BA Degree</strong>
+        Nelson Mandela University — 2023
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card">
+      <img src="images/it-support.png" alt="IT Support Badge" class="cert-badge">
+      <figcaption>
+        <strong>IT Support (Coursera)</strong>
+        Coursera (Online) — 2025
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card">
+      <img src="images/teacher-record.png" alt="TEFL Certificate" class="cert-badge">
+      <figcaption>
+        <strong>TEFL 120-Hour Course</strong>
+        Teacher Record — 2024
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card">
+      <img src="images/professional development.png" alt="Professional Development Badge" class="cert-badge">
+      <figcaption>
+        <strong>Professional Development</strong>
+        Coursera (Online) — 2025
+      </figcaption>
+    </figure>
+  </div>
+</section>
 
 
 /* ==========================
