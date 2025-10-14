@@ -387,35 +387,70 @@ body {
 /* ==========================
    CERTIFICATES
 ========================== */
- /* ...other styles remain unchanged... */
- font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
+<style>
+.certificates {
+padding: 3.5rem 0;
+}
+.certificates .section-title h2 {
+font-size: 1.5rem;
+margin-bottom: 0.25rem;
+}
+.certificates .section-title p {
+margin-bottom: 1.5rem;
+color: #555;
+font-size: 0.95rem;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
 
-  .section-title {
-    text-align: center;
-    margin-bottom: 50px;
-  }
+.cert-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+gap: 1rem;
+align-items: center;
+}
 
-  .section-title h2 {
-    font-size: 2rem;
-    color: #ffd700;
-    margin-bottom: 10px;
-  }
 
-  .section-title p {
-    font-size: 1rem;
-    color: #ccc;
-  }
+.cert-card {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 0.5rem;
+border-radius: 8px;
+}
+
+
+.cert-badge {
+width: 110px;
+height: 110px;
+object-fit: contain;
+border: 1px solid rgba(0,0,0,0.06);
+border-radius: 8px;
+padding: 8px;
+background: #fff;
+box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+
+.cert-card figcaption {
+margin-top: 0.5rem;
+font-size: 0.85rem;
+color: #333;
+}
+
+
+.cert-card:hover .cert-badge,
+.cert-card:focus-within .cert-badge {
+transform: translateY(-6px) scale(1.03);
+box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+
+@media (max-width: 420px) {
+.cert-badge { width: 86px; height: 86px; padding: 6px; }
+.cert-grid { gap: 0.6rem; }
+}
 
 
 /* ==========================
