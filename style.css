@@ -390,7 +390,7 @@ body {
 <style>
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* fixed 2 columns */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
 }
 
@@ -398,9 +398,10 @@ body {
   text-align: center;
   padding: 0.8rem;
   border-radius: 10px;
-  background: #fff;
+  background: #1e40af; /* Blue background */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #fff; /* White text */
 }
 
 .cert-card:hover {
@@ -418,58 +419,17 @@ body {
 .cert-card figcaption {
   margin-top: 0.6rem;
   font-size: 0.9rem;
-  color: #333;
+  color: #fff; /* White caption text */
   line-height: 1.4;
 }
 
 .cert-card strong {
   display: block;
   font-size: 0.95rem;
-  color: #111;
+  color: #fff; /* White bold text */
   margin-bottom: 0.25rem;
 }
-
-.cert-card h4 {
-  font-size: 1.5rem;
-  margin-bottom: 0.3rem;
-  color: #ffd700;
-}
 </style>
-
-<section class="certificates">
-  <div class="cert-grid">
-    <figure class="cert-card">
-      <img src="images/education.png" alt="Education Badge" class="cert-badge">
-      <figcaption>
-        <strong>BA Degree</strong>
-        Nelson Mandela University - 2023
-      </figcaption>
-    </figure>
-
-    <figure class="cert-card">
-      <img src="images/it-support.png" alt="IT Support Badge" class="cert-badge">
-      <figcaption>
-        <strong>IT Support</strong>
-        Coursera - 2025
-      </figcaption>
-    </figure>
-
-    <figure class="cert-card">
-      <img src="images/teacher-record.png" alt="Teacher Badge" class="cert-badge">
-      <figcaption>
-        <strong>TEFL 120-Hour Course</strong>
-        Teacher Record - 2024
-      </figcaption>
-    </figure>
-
-    <figure class="cert-card">
-      <img src="images/professional development.png" alt="Professional Development Badge" class="cert-badge">
-      <figcaption>
-        <strong>Professional Development</strong>
-        Coursera - 2025
-      </figcaption>
-    </figure>
-  </div>
 
 
 /* ==========================
