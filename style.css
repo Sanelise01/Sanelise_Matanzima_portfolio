@@ -490,32 +490,69 @@ body {
   </div>
 </section>
 
-/* EXPERIENCE section square badges */
-.experience-item .experience-img {
-  width: 40px;            /* badge width */
-  height: 40px;           /* badge height */
-  object-fit: cover;      /* maintain aspect ratio and crop if needed */
-  border-radius: 4px;     /* small rounding for slightly softened corners, 0 for sharp square */
-  margin-right: 12px;     /* space between badge and text */
-  border: 1px solid #ccc; /* subtle border for badge */
-  vertical-align: middle; /* align with text */
+/* Match professional certificate style */
+.experience-section {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb, #38bdf8);
+  padding: 3rem 1.5rem;
+  border-radius: 16px;
 }
 
-/* grid layout for 2-column format */
-.experience-list {
+.experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
-/* each experience item alignment */
-.experience-item {
-  display: flex;
-  align-items: flex-start;
-  background-color: #f8f9fa; /* optional: match portfolio background */
-  padding: 12px;
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.experience-card {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.experience-badge {
+  width: 80px;   /* smaller badge size */
+  height: 80px;
+  object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.experience-card figcaption {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.experience-card strong {
+  display: block;
+  font-size: 1rem;
+  color: #ffd700; /* gold accent for titles */
+  margin-bottom: 0.25rem;
+}
+
+.experience-section h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 
