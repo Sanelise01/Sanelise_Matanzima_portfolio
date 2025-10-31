@@ -489,49 +489,25 @@ body {
     </figure>
   </div>
 </section>
-/* Experience Section */
-.experience {
-  background-color: #f8f9fa; /* same as portfolio background */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* consistent font */
-  color: #333;
-  padding: 20px;
-  border-radius: 10px;
+
+/* EXPERIENCE section square badges */
+.experience-item .experience-img {
+  width: 40px;            /* badge width */
+  height: 40px;           /* badge height */
+  object-fit: cover;      /* maintain aspect ratio and crop if needed */
+  border-radius: 4px;     /* small rounding for slightly softened corners, 0 for sharp square */
+  margin-right: 12px;     /* space between badge and text */
+  border: 1px solid #ccc; /* subtle border for badge */
+  vertical-align: middle; /* align with text */
 }
 
+/* ensure the container aligns items properly */
 .experience-item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
-.experience-img {
-  width: 50px;   /* small badge size */
-  height: 50px;  /* small badge size */
-  object-fit: cover;
-  border-radius: 50%; /* circular badge */
-  margin-right: 15px;
-  border: 2px solid #ddd; /* optional subtle border */
-}
-
-.experience-details h2 {
-  margin: 0 0 5px 0;
-  font-size: 1.1rem;
-  color: #2c3e50;
-}
-
-.experience-details p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.organization {
-  font-style: italic;
-}
-
-.duration {
-  color: #7f8c8d;
-}
 
 </section>
 
