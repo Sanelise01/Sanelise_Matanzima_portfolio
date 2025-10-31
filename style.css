@@ -489,6 +489,51 @@ body {
     </figure>
   </div>
 </section>
+/* Experience Section */
+.experience {
+  background-color: #f8f9fa; /* same as portfolio background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* consistent font */
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.experience-img {
+  width: 50px;   /* small badge size */
+  height: 50px;  /* small badge size */
+  object-fit: cover;
+  border-radius: 50%; /* circular badge */
+  margin-right: 15px;
+  border: 2px solid #ddd; /* optional subtle border */
+}
+
+.experience-details h2 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.experience-details p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.organization {
+  font-style: italic;
+}
+
+.duration {
+  color: #7f8c8d;
+}
+
+</section>
 
 
 /* ==========================
