@@ -501,12 +501,23 @@ body {
   vertical-align: middle; /* align with text */
 }
 
-/* ensure the container aligns items properly */
+/* grid layout for 2-column format */
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+/* each experience item alignment */
 .experience-item {
   display: flex;
-  align-items: center;
-  margin-bottom: 16px;
+  align-items: flex-start;
+  background-color: #f8f9fa; /* optional: match portfolio background */
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
 
 
 </section>
